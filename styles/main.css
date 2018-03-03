@@ -1,0 +1,63 @@
+header {
+  background : url(../images/background-image.jpg) center / cover;
+  height: 80vh;
+  justify-content: center;
+  text-align: center;
+
+}
+
+h1 {
+  color:  hsla(0, 0%, 100%, 0.9);
+  font-weight: bold;
+
+
+}
+
+/* color is not showing up right now, it is still grey */
+.slogan {
+  color: hsla(0, 0%, 100% 0.7);
+  font-weight: lighter;
+  font-size: 1.6rem;
+
+}
+
+/* setting max width so the page won't span the full width of the page on large screen */
+main {
+  max-width: 900px
+}
+
+/* making sure the text line up from the left edges */
+.project-description {
+  padding-left: o;
+}
+
+/* make sure images take up 100% of its container */
+.project img {
+  width: 100%;
+}
+
+/* keeping it at the bottom of the page regardless of where the user's scrollbar is */
+footer.mdl-mini-footer {
+  bottom: 0;
+  padding: 0.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+body {
+  padding-bottom: 5rem;
+}
+
+/* center the link */
+footer.mdl-mini-footer > ul {
+  margin: auto; /* the oldest horizontal centering trick */
+  font-size: 2rem;
+
+}
+
+@media screen and (max-width: 1024px) {
+   header.mdl-layout__header {
+     display: flex;
+   }
+ }
