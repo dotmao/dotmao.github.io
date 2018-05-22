@@ -9,30 +9,41 @@
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
     <link ref="stylesheet" href="styles/about.css">
   </head>
+
   <body>
-    <section class="nav-bar-container">
-      <nav>
-          <div class="nav-logo">
-            <img src="svgs/logo.svg">
-            <a href="index.html"></a>
-          </div>
-          <div class="menus">
+    <section>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html"><img src="svgs/logo.svg"></a>
+        </div>
+        <div class="menu">
+          <nav>
             <ul>
               <li>
-                <a href="">CREATIONS</a>
+                <a href="index.html">CREATIONS</a>
               </li>
               <li>
-                <a href="">ABOUT</a>
+                <a href="about.html">ABOUT</a>
               </li>
               <li>
                 <a href="">CONTACT</a>
               </li>
             </ul>
-          </div>
-      </nav>
+          </nav>
+        </div>
+      </div>
+  </section>
+
     </section>
 
     <section class="self-intro">
@@ -98,7 +109,7 @@
     </section>
 
     <div class="contact">
-        <a href="" class="button">Drop Me A Line</a>
+        <a href="" class="button" id="contact-button">Drop Me A Line</a>
     </div>
 
     <footer class ="footer-container" class="mdl-mini-footer">
