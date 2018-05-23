@@ -11,12 +11,20 @@
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <!-- animate.css -->
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+
+
     <!-- custom styles -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
 
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/main.css">
+
   </head>
   <body>
       <!-- nav bar -->
@@ -29,7 +37,7 @@
               <nav>
                 <ul class="main-nav">
                   <li>
-                    <a href="index.html">CREATIONS</a>
+                    <a href="index.html.project-header">CREATIONS</a>
                   </li>
                   <li>
                     <a href="about.html">ABOUT</a>
@@ -46,12 +54,12 @@
       <section class="hero-container">
         <div class="hero-content">
           <h1>
-            Hi, Hongqian Mao here.
+            Ahoy! I'm Hongqian Mao.
             <span>(AKA Dorothy)</span>
           </h1>
-          <h2>
+          <h3>
             A UX Designer from NYC.
-          </h2>
+          </h3>
           <p>
             Currently translating brilliant ideas into intuitive user experiences to improve the way we interact with this amazing world.
           </p>
@@ -68,18 +76,22 @@
             My Creations
           </h2>
           <div class="project-showcase">
-            <img class="showcase-img" id="nova" src="images/nova/nova.png">
+            <div class="showcase">
+              <a><img src="images/nova/nova.png"></a>
+            </div>
             <div class="hover-overlay">
-              <div class="hover-text">
+              <div class="hover-text" >
                 <h3>NOVA</h3>
                 <p>Cloud Storage concept design</p>
               </div>
             </div>
           </div>
           <div class="project-showcase">
-            <img class="showcase-img" id="weather-app" src="images/weather_app.png">
+            <div class="showcase">
+              <a><img src="images/weather_app.png"></a>
+            </div>
             <div class="hover-overlay">
-              <div class="hover-text">
+              <div class="hover-text-weather-app">
                 <h3>Weather app</h3>
               </div>
             </div>
@@ -88,7 +100,7 @@
 
         <section class="process-container">
           <!-- style different paragraph style in css or html? -->
-          <p>
+          <p class="animated fadeInLeft">
             Transformative experiences are generated through intuitive design. Intuitive design follows an intentional and logical
             <span>
               process.
@@ -110,16 +122,19 @@
 <!-- footer  -->
     <footer class ="footer-container">
       <ul class="footer-icons">
-        <li> <a href="https://www.linkedin.com/in/dorothymao/">
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        <li>
+          <a href="https://www.linkedin.com/in/dorothymao/">
+          <i class="fa fa-linkedin-square" style="color: #7AABD3;" aria-hidden="true"></i>
           </a>
         </li>
         <li>
-          <a href="https://github.com/users/dotmao"><i class="fa fa-github-square" aria-hidden="true"></i>
+          <a href="https://github.com/users/dotmao">
+            <i class="fa fa-github-square" style="color: #7AABD3;" aria-hidden="true"></i>
         </a>
         </li>
         <li>
-          <a href=" mailto:dorothy.hongqian@gmail.com"> <i class="fa fa-envelope-square" aria-hidden="true"></i>
+          <a href=" mailto:dorothy.hongqian@gmail.com">
+            <i class="fa fa-envelope-square" style="color: #7AABD3;" aria-hidden="true"></i>
         </a>
         </li>
       </ul>
