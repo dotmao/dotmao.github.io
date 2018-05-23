@@ -1,0 +1,11 @@
+h1, h2, h3 {
+      font-family: 'Oswald', sans-serif;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
+.banner-image {
+  width: 800px;
+}

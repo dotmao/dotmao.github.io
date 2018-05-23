@@ -123,7 +123,7 @@ nav li a {
   letter-spacing: 2px;
   max-width: 750px;
   padding-left: 140px;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 /* button stles */
@@ -197,6 +197,7 @@ nav li a {
 .showcase img {
   width: 100%;
   max-width: 550px;
+  height: auto;
   transition: 0.5s;
 }
 
@@ -228,7 +229,7 @@ nav li a {
   color: white;
   font-size: 1.125em;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 25%;
   -webkit-transition: all .3s ease;
   text-align: center;
@@ -262,6 +263,18 @@ nav li a {
   background-image: url("../images/process-background.png");
   background-size: cover;
   height: 400px;
+}
+
+.hover-text h3 {
+    font-size: 1.5em;
+}
+
+.hover-text p {
+  padding-top: 8px;
+}
+
+.hover-text-weather-app h3 {
+    font-size: 1.5em;
 }
 
 .process-container p {
@@ -346,6 +359,7 @@ footer {
 .copyright-info p {
   color: #7AABD3;
 }
+
 
 /* body {
   padding-bottom: 5rem;
