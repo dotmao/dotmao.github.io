@@ -1,3 +1,7 @@
+html {
+  font-size: 10px;
+}
+
 header {
   background : url(../images/background-image.jpg) center / cover;
   height: 80vh;
@@ -56,9 +60,9 @@ nav li {
 
 nav li a {
   color: #ffffff;
-  font-size: 1.125em;
+  font-size: 1.8rem;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
 }
 
 
@@ -95,41 +99,41 @@ nav li a {
 
 .hero-content h1 {
   color: #ffffff;
-  font-size: 2.5em;
+  font-size: 4rem;
   font-weight: bold;
-  letter-spacing: 2px;
-  padding-left: 140px;
-  padding-top: 200px;
+  letter-spacing: 0.2rem;
+  padding-left: 14rem;
+  padding-top: 20rem;
 }
 
 .hero-content span {
-  font-size:24px;
+  font-size:2.4rem;
 }
 
 .hero-content h3 {
   color: #ffffff;
-  font-size: 1.5em;
-  letter-spacing: 2px;
-  margin-top: 20px;
-  padding-left: 140px;
-  padding-top: 30px;
+  font-size: 2.4rem;
+  letter-spacing: 0.2rem;
+  margin-top: 2rem;
+  padding-left: 14rem;
+  padding-top: 3rem;
 }
 
 .hero-content p {
   color: #ffffff;
-  font-size: 1.125em;
+  font-size: 1.8rem;
   font-weight: 500;
-  line-height: 1.5em;
-  letter-spacing: 2px;
+  line-height: 2.4rem;
+  letter-spacing: 0.2rem;
   max-width: 750px;
-  padding-left: 140px;
-  padding-top: 80px;
+  padding-left: 14rem;
+  padding-top: 8rem;
 }
 
 /* button stles */
 .hero-buttons {
-  margin-top: 100px;
-  margin-left: 140px;
+  margin-top: 10rem;
+  margin-left: 14rem;
 }
 
 .button {
@@ -138,12 +142,12 @@ nav li a {
   border-radius: 50px;
   color: #ffffff;
   font-family: "Raleway", sans-serif;
-  font-size: 1.125em;
+  font-size: 1.8rem;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   /* width: 150px; */
   text-align: center;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
 }
 
 .button2 {
@@ -153,28 +157,28 @@ nav li a {
   border: 2px solid #7AABD3;
   color: #ffffff;
   font-family: "Raleway", sans-serif;
-  font-size: 1.125em;
+  font-size: 1.8rem;
   font-weight: 500;
-  margin-left: 100px;
-  letter-spacing: 2px;
+  margin-left: 10rem;
+  letter-spacing: 0.2rem;
   /* width: 150px; */
   text-align: center;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
 }
 
 
 
 /* projects */
 .projects-container {
-  margin-left: 80px;
-  margin-top: 140px;
+  margin-left: 8rem;
+  margin-top: 14rem;
 }
 
 .projects-container h2 {
- font-size: 2.25em;
+ font-size: 3.6rem;
  font-weight: 500;
- letter-spacing: 2px;
- margin-bottom: 40px;
+ letter-spacing: 0.2rem;
+ margin-bottom: 4rem;
 
 }
 
@@ -227,7 +231,7 @@ nav li a {
 
 .hover-text {
   color: white;
-  font-size: 1.125em;
+  font-size: 1.8rem;
   position: absolute;
   top: 45%;
   left: 25%;
@@ -242,7 +246,7 @@ nav li a {
 
 .hover-text-weather-app {
   color: white;
-  font-size: 1.125em;
+  font-size: 1.8rem;
   position: absolute;
   top: 50%;
   left: 40%;
@@ -256,54 +260,57 @@ nav li a {
   opacity: 1
 }
 
-.process-container {
-  margin-top: 140px;
-  padding-left: 80px;
-  padding-top: 80px;
-  background-image: url("../images/process-background.png");
-  background-size: cover;
-  height: 400px;
-}
 
 .hover-text h3 {
-    font-size: 1.5em;
+    font-size: 2.4rem;
 }
 
 .hover-text p {
-  padding-top: 8px;
+  padding-top: .8rem;
 }
 
 .hover-text-weather-app h3 {
-    font-size: 1.5em;
+    font-size: 2.4rem;
+}
+
+.process-container {
+  margin-top: 14rem;
+  padding-left: 8rem;
+  padding-top: 8rem;
+  background-image: url("../images/process-background.png");
+  background-size: cover;
+  height: 42rem;
 }
 
 .process-container p {
   color: #ffffff;
-  font-size: 1.25em;
+  font-size: 2rem;
   display: inline-block;
   letter-spacing: 1px;
   max-width: 400px;
-  line-height: 2em;
-  padding-left: 60px;
-  padding-top: 40px;
+  line-height: 4rem;
+  padding-left: 8rem;
+  padding-top: 4rem;
 }
 
 .process-container span {
-  font-size: 1.5em;
+  font-size: 2.4rem;
   font-weight: 500;
 }
 
 .illustration {
   display: inline-block;
   float: right;
-  margin-right: 80px;
+  margin-right: 8rem;
+  padding-bottom: 10rem;
+  top: 50%;
 }
 
 .illustration img {
-  width: 400px;
+  width: 45rem;
   height: auto;
-  padding-right: 60px;
-  top: 50%;
+  padding-right: 8rem;
+
 }
 
 .contact {
@@ -313,8 +320,8 @@ nav li a {
 }
 
 .contact h1{
-  font-size: 2.5em;
-  padding-bottom: 40px;
+  font-size: 4rem;
+  padding-bottom: 4rem;
 }
 
 /* setting max width so the page won't span the full width of the page on large screen */
@@ -328,7 +335,7 @@ main {
 footer {
   position: absolute;
   background-color: #333333;
-  height: 80px;
+  height: 8rem;
   width: 100%;
   bottom: 0;
 }
@@ -336,13 +343,13 @@ footer {
 .footer-icons {
   display: inline-block;
   float: left;
-  margin-left: 50px;
+  margin-left: 5rem;
 }
 
 .footer-icons li {
   display: inline-block;
-  padding-top: 30px;
-  padding-left: 10px;
+  padding-top: 3rem;
+  padding-left: 1rem;
   color: #ffffff;
 }
 
@@ -351,13 +358,14 @@ footer {
 .copyright-info {
   display: inline-block;
   float: right;
-  margin-right: 50px;
-  padding-top: 30px;
+  margin-right: 5rem;
+  padding-top: 3rem;
   vertical-align: middle;
 }
 
 .copyright-info p {
   color: #7AABD3;
+  font-size: 1.2rem;
 }
 
 
@@ -368,7 +376,7 @@ footer {
 /* center the link */
 footer > ul {
   margin: auto; /* the oldest horizontal centering trick */
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 @media screen and (max-width: 1024px) {

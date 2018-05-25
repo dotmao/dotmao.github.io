@@ -1,3 +1,8 @@
+
+html {
+  font-size: 10px;
+}
+
 header {
   background : url(../images/background-image.jpg) center / cover;
   height: 80vh;
@@ -8,9 +13,8 @@ header {
 body {
     margin: 0;
     position: relative;
-    padding-bottom: 60px;
+    padding-bottom: 6rem;
     font-family: 'Raleway', sans-serif;
-    color: yellow;
 }
 
 h1, h2, h3 {
@@ -21,131 +25,161 @@ p {
   font-family: 'Raleway', sans-serif;
 }
 
-/* nav bar  */
-.nav-container {
-  background-color: #333333;
-  overflow: hidden;
-  width:100%;
-  position: fixed;
-  z-index: 2
-}
-
-.nav-logo {
-  float: left;
-  position: relative;
-  height: 20px;
-  margin: 20px 0px 20px 50px;
-}
-
-
-.menu {
-  float: right;
-  padding: 40px 50px 30px 0px;
-
-}
-
-/* getting rid of the link underline   */
-a:link {
-    text-decoration: none;
-}
-
-nav li {
-  display: inline;
-  margin: 0px 30px;
-  font-family: 'Oswald', sans-serif;
-}
-
-nav li a {
-  color: #ffffff;
-  font-size: 1.125em;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-
-
-.main-nav li {
-  position: relative;
-}
-
-
-.main-nav a:after {
-  opacity:0;
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  height: 4px;
-  width: 0;
-  background-color: #7AABD3;
-  transition: all .5s;
-}
-
-.main-nav li:hover a:after {
-  width: 40px;
-  opacity: 1;
-  transition: all .5s;
-}
 
 
 .banner-image {
-  width: 800px;
-}
-
-
-.button {
-  display: inline-block;
-  background-color: #7AABD3;
-  border-radius: 50px;
-  color: #ffffff;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.125em;
-  font-weight: 500;
-  letter-spacing: 1px;
-  /* width: 150px; */
-  text-align: center;
-  padding: 15px 40px;
-}
-
-
-footer {
-  position: absolute;
-  background-color: #333333;
-  height: 80px;
   width: 100%;
-  bottom: 0;
 }
 
-.footer-icons {
+/* intro section */
+
+.intro {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  margin: 10rem 8rem;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.intro-text p {
+  max-width: 80rem;
+}
+
+
+.intro h2 {
+  font-size: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+
+/* #para-container {
+  margin-left: 25rem;
+  max-width: 60%;
+  line-height: 2rem;
+} */
+
+.intro p {
+  padding-top: 4rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+}
+
+
+.roles-tools-container {
+  width: 100%;
+  background-color: #CDD4DC;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 20rem;
+}
+
+.roles {
+  padding-bottom: 5rem;
+}
+
+.roles h3 {
+  text-align: left;
+  letter-spacing: 0.1rem;
+  font-size: 2.4rem;
+}
+
+.roles-content ul {
+  padding-top: 3rem;
+}
+
+.roles-content ul li {
   display: inline-block;
-  float: left;
-  margin-left: 50px;
 }
 
-.footer-icons li {
+.roles-content li {
+  font-size: 1.8rem;
+  padding-right: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+.tools h3 {
+  text-align: left;
+  letter-spacing: 0.1rem;
+  font-size: 2.4rem;
+}
+
+.tools-content li {
+  display: block;
+}
+
+.icons li{
   display: inline-block;
-  padding-top: 30px;
-  padding-left: 10px;
-  color: #ffffff;
+  padding-right: 4rem;
+  padding-top: 3rem;
+  font-size: 1.8rem;
 }
 
+.icons li img {
+  padding-left: .5rem;
+  width: 3rem;
+}
 
+.icon li h5 {
+  font-size: 1.4rem;
+}
 
-.copyright-info {
+.tool-names li {
   display: inline-block;
-  float: right;
-  margin-right: 50px;
-  padding-top: 30px;
-  vertical-align: middle;
+  font-size: 1.4rem;
+  padding-right: 3rem;
+  padding-top: 3rem;
 }
 
-.copyright-info p {
-  color: #7AABD3;
+
+
+
+/* case study details */
+
+.case-study-container {
+  margin-left: 12rem;
+  margin-right: 12rem;
+  margin-top: 14rem;
 }
 
-footer > ul {
-  margin: auto; /* the oldest horizontal centering trick */
-  font-size: 2rem;
+.overview-header {
+  padding-bottom: 5rem;
 }
+.overview {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overview-header {
+
+}
+
+
+
+.overview-header h2 {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 5px solid #7AABD3;
+}
+
+
+
+.overview-text p {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  max-width: 60%;
+
+
+}
+
+
+
 
 @media screen and (max-width: 1024px) {
    header {
