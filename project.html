@@ -147,7 +147,7 @@
           <div class="overview">
             <div class="overview-header">
               <h2>
-                Concept Overview
+                Concept Overview:
               </h2>
             </div>
             <div class="overview-text">
@@ -161,31 +161,32 @@
         </section>
 
         <section class="challenges-and-solutions-container">
-          <!-- style different paragraph style in css or html? -->
-          <div class="challenges">
-            <h2>Challenges</h2>
-            <p>
-              <i>
-                “I have millions of files in the cloud. It takes me forever to find the file I want.” –Jason
-              </i>
-              <strong>
-                Difficult to locate files.
-              </strong>
-            </p>
-            <p>
-              <i>
-                “Sometimes, I get frustrated during work when I need to look for certain information but the teammates are updating the file in real-time that makes it difficult for me because the file keeps changing constantly.” –Felix
-              </i>
-              <strong>
-                Poor collaboration controls.
-              </strong>
-            </p>
-            <h2>Solutions</h2>
+          <div class="challenge-content">
+            <h2>Challenges:</h2>
+            <div class="challenge-content">
+              <p id="problem">
+                  “I have millions of files in the cloud. It takes me forever to find the file I want.” –Jason
+              </p>
+              <br>
+              <p>
+                  Difficult to locate files.
+              </p>
+            </div>
+              <div class="challenge-content">
+                <p id="problem">
+                    “Sometimes, I get frustrated during work when I need to look for certain information but the teammates are updating the file in real-time that makes it difficult for me because the file keeps changing constantly.” –Felix
+                </p>
+                <br>
+                <p>
+                    Poor collaboration controls.
+                </p>
+            </div>
           </div>
-          <div class="solutions">
+          <div class="challenge-content">
+            <h2 id="solution">Solutions:</h2>
             <p>
-              Nova is designed to close some of the gaps mentioned above and offer users an intuitive interface to store, share, access and create content on one collective platform.
-              It provide smooth content management system by establishing file categories and adding tag feature at the same time, Nova ensures collaboration accuracy by granting file monitoring and auditing abilities to the owner of the file such as project manager.
+              Nova is designed to close some of the gaps mentioned above and offer users an intuitive interface to store, share, <span>access and create content on one collective platform</span>.
+              It provide <span>smooth content management system</span> by establishing file categories and adding tag feature at the same time, Nova <span>ensures collaboration accuracy</span> by granting file monitoring and auditing abilities to the owner of the file such as project manager.
             </p>
           </div>
         </section>
@@ -194,31 +195,34 @@
         <section class="case-study-process">
           <!-- research -->
           <div class="user-research">
-            <h2>Discovery . User Research</h2>
-            <p>
-              In order to validate my initial assumptions, I needed to get the answers from my users then understand what they need and how they use current services.
-              I conducted an online user survey and distributed on social media in order to optimize my response rate.
-              The survey was designed with the following
-              <span>objectives</span>
-              in mind:
-            </p>
-            <div class="objectives">
-              <ol>
-                <li>Who are the main competitors out there?</li>
-                <li>Why do users like using cloud storage services?</li>
-                <li>If they are not using cloud storage, what would encourage them to use it?</li>
-                <li>What are some concerns they have over cloud storage services?</li>
-                <li>What can cloud storage services do better for users? </li>
-              </ol>
+              <h2>Discovery . User Research</h2>
+              <div class="research">
+                <div class="research-sum">
+                  <p>
+                    In order to validate my initial assumptions, I needed to get the answers from my users then understand what they need and how they use current services.
+                    I conducted an online user survey and distributed on social media in order to optimize my response rate.
+                    The survey was designed with the following
+                    <span>objectives</span>
+                    in mind:
+                  </p>
+                </div>
+                <div class="objectives">
+                  <p>1.) Who are the main competitors out there?</p>
+                  <p>2.) Why do users like using cloud storage services?</p>
+                  <p>3.)If they are not using cloud storage, what would encourage them to use it?</p>
+                  <p>4.) What are some concerns they have over cloud storage services?</p>
+                  <p>5.) What can cloud storage services do better for users? </p>
+                </ol>
+                </div>
+              </div>
+              <div class="survey-graphs">
+                <img src="svgs/survey.svg">
+              </div>
+              <p id="research-conclusion">
+                It was very obvious that cloud storage service needs to improve security features at the same time provides more a user-friendly interface for
+                <span>collaboration</span> and <span>file organization</span>.
+              </p>
             </div>
-            <div class="survey-graphs">
-              <img src="svgs/survey.svg">
-            </div>
-            <p>
-              It was very obvious that cloud storage service needs to improve security features at the same time provides more a user-friendly interface for
-              <span>collaborationa</span> and <span>file organization</span>.
-            </p>
-          </div>
 
           <!-- competitors -->
           <div class="competitors">
@@ -226,9 +230,9 @@
             <div class="company-logos">
               <img src="svgs/box_logo.svg">
               <img src="svgs/dropbox_logo.svg">
-              <img src="svgs/google_drive_logo.svg">
+              <img src="svgs/google-drive-logo.svg">
               <p>In order to properly position this new service, it is vital to conduct a competitive analysis.
-                I used SWOT analysis method for this project to carefully compare competitors’ strengths and weaknesses, at the same time to seek opportunities in the industry.
+                I used <span>SWOT analysis</span> method for this project to carefully compare competitors’ strengths and weaknesses, at the same time to seek opportunities in the industry.
                 Check out my competitive analysis <a href="https://docs.google.com/document/d/143wqqJhIZRmDTA-zfKukNvvfEod35WG7ikwhFr0ytQE/edit?usp=sharing">here</a>.
               </p>
             </div>
@@ -241,15 +245,17 @@
               Before digging deeper into what users need, I needed to find out who our users are and create user personas.
               I interviewed different sets of users and concluded that there are 3 different but somewhat similar <a href="https://drive.google.com/file/d/1gUpjbcHNEdaQrXucJa4jkyOFIgxom4oW/view?usp=sharing">personas</a>:
             </p>
-            <div class="persona-list">
-              <ul>
-              <li> Tech-savvy individuals who use cloud storage to store and organize all files in one place.</li>
-              <li>2) Young professionals who use cloud storage to collaborate with colleagues for work.</li>
-              <li>3) Entrepreneurs or start ups who rely on cloud storage for smooth workflow.</li>
-              </ul>
-            </div>
-            <div class="persona-image">
-              <img src="images/nova/persona.png">
+            <div class="persona">
+              <div class="persona-list">
+                <ul>
+                  <li>1.) Tech-savvy individuals who use cloud storage to store and organize all files in one place.</li>
+                  <li>2.) Young professionals who use cloud storage to collaborate with colleagues for work.</li>
+                  <li>3.) Entrepreneurs or start ups who rely on cloud storage for smooth workflow.</li>
+                </ul>
+              </div>
+              <div class="persona-image">
+                <img src="images/nova/persona.png">
+              </div>
             </div>
           </div>
 
@@ -263,22 +269,22 @@
             <img src="images/nova/user_flow.png">
           </div>
 
-          <div class="ia-lo-fi">
+          <div class="ia-lo-fi-contaner">
             <div class="sketch-container">
+              <h2>Information Architecture . Sketch</h2>
               <img src="images/nova/sketch.png">
               <div class="sketch-text">
-                <p>Design does not happen on the screen first. Almost all projects start with some quick sketches on paper or whiteboards.
-                It is basic, fast and easy to complete and it allows ideas flow freely with just a pen in hand.
+                Design does not happen on the screen first. Almost all projects start with some quick <span>sketches</span> on paper or whiteboards.
+                It is <span>basic</span>, <span>fast</span>. and <span>easy</span> to complete and it allows ideas flow freely with just a pen in hand.
                 There is no distraction from design details such as colors, fonts and spacing in sketching.
                 The procedure solely focuses on idea generation.
-              </p>
               </div>
             </div>
 
-            <div class="lo-fi-text">
+            <div id="lo-fi-text">
               <p>
-                The low-fidelity mockup is quick and rough, it allowed me to generate some quick ideas and build a simple blueprint of the site without any established visual assets.
-                I started with some quick sketches, then I completed a refined version wireframes in myBalsamiq.
+                The low-fidelity mockup is quick and rough, it <span>allowed me to generate some quick ideas and build a simple blueprint of the site without any established visual assets</span>.
+                I started with some quick sketches, then I completed a refined version wireframes in <span>myBalsamiq</span>.
               </p>
             </div>
 
@@ -290,20 +296,26 @@
             <!-- visual design -->
             <div class="branding">
               <h2>Visual Design . Branding</h2>
-              <img src="images/nova/name-sketch.png">
-              <div class="branding-p1">
-                  Although it is a concept, a brand identity is still necessary.
-                  I started mapping out <span>name associations</span>, soon enough, I focused on the idea of “space” due to its direct link to cloud service. I chose the brand name “NOVA”, which represents brightness, brilliance and infinity. The brand identity was born accordingly. NOVA, the new star in cloud service industry, conveys advanced technology,
-                  provides seamless workflow and is committed to being transparent with all users.
+              <div class="branding-content">
+                <div class="name-sketch">
+                  <img src="images/nova/name-sketch.png">
+                </div>
+                <div class="name-content">
+                    Although it is a concept, a brand identity is still necessary.
+                    I started mapping out <span>name associations</span>, soon enough, I focused on the idea of “space” due to its direct link to cloud service. I chose the brand name “NOVA”, which represents brightness, brilliance and infinity. The brand identity was born accordingly. NOVA, the new star in cloud service industry, conveys advanced technology,
+                    provides seamless workflow and is committed to being transparent with all users.
+                </div>
               </div>
-              <div class="branding-p2">
+              <div id="style-guide">
+                <p>
                   With the brand values and our target market in mind, I decided to choose blue as our main color scheme.
                   However, the traditional vibrant blue that is often used for large corporations was not the best fit for the audience.
                   I wanted a color that speaks trust and innovation. After a few trials, I found that the combination of Tiffany blue with light green shade was a very interesting color for this brand.
-                  It was very modern, stylish and a subtle color for screen use. I designed the logo in different versions based on a cloud shape I drew and ran a preference test.
+                  <span>It is very modern, stylish and a subtle color for screen use.</span> I designed the logo in different versions based on a cloud shape I drew and ran a preference test.
                   I then established my <span>style guide</span> for the site according to the result of my logo preference test.
+                </p>
+                <img src="images/nova/style-guide-nova.png">
               </div>
-              <img src="images/nova/style-guide-nova.png">
             </div>
 
             <div class="hi-fi">
@@ -313,36 +325,53 @@
               <p>
                 With all my visual assets completed, I created a series of high-fidelity mockups for both large screen and mobile screen.
               </p>
-              <div class="hi-fi-images">
-                <img src="images/nova/Home.png">
-                <img src="images/nova/Feature.png">
-                <img src="images/nova/Dashboard.png">
-                <img src="images/nova/Dashboard-all-files.png">
-                <img src="images/nova/Dashboard-listview.png">
-                <img src="images/nova/File-all-edits">
+              <div class="hi-fi-wrapper">
+                <div class="img1">
+                  <img src="images/nova/Home.png">
+                </div>
+                <div class="img2">
+                    <img src="images/nova/Feature.png">
+                </div>
+                <div class="img3">
+                  <img src="images/nova/Dashboard.png">
+                </div>
+                <div class="img4">
+                  <img src="images/nova/Dashboard-listview.png">
+                </div>
+                <div  class="img5">
+                  <img src="images/nova/Dashboard.png">
+                </div>
+                <div class="img6">
+                  <img src="images/nova/Dashboard-all-files.png">
+                </div>
               </div>
-              <div class="dashboard-features">
-                <img src="images/nova/Dashboard.png">
-                <div class="file-images">
-                  The preview of text-type files such as word document, excel or PDF is not particularly helpful due to lack of legibility of the content.
-                  In order to reduce clutter, I decided to only show preview for visual-file such as images and videos.
+              <div class="dashboard-wrapper">
+                <div class="demo-img">
+                    <img src="images/nova/demo-dashboard.png">
                 </div>
-                <div class="panel">
-                  The dashboard emphasizes file organization and collaboration controls.
-                  The left panel allows users to view files in different categories, this feature can reduce search time by filtering file types.
+                <div class="demo-img-text1">
+                    The preview of text-type files such as word document, excel or PDF is not particularly helpful <span>due to lack of legibility of the content</span>.
+                    In order to reduce clutter, I decided to only show preview for visual-file such as images and videos.
                 </div>
+                <div class="demo-img-text2">
+                    The dashboard emphasizes <span>file organization and collaboration controls</span>.
+                    The left panel allows users to view files in different categories, this feature can reduce search time by filtering file types.
+                </div>
+              </div>
+
               </div>
               <div class="mockup-mobile">
                 <img src="images/nova/mockup.png">
               </div>
             </div>
             <!-- prototype button -->
-            <div>
+            <div class="prototype-button">
               <a href="https://www.figma.com/proto/vdcdnjgfNphuKubT7tzjvB/NOVA?node-id=691%3A29&scaling=contain" class="button">
                 See Prototype
               </a>
             </div>
         </section>
+
         <section class="reflection">
           <div class="reflection-container">
             <h2>Reflection:</h2>
@@ -352,7 +381,7 @@
             </p>
             <br>
             <p>
-              Further improvements:
+              <span>Further improvements:</span>
               With limited time and resources, I did not get the amount of survey response I wanted.
               Therefore, if time permits I would conduct more a thorough user survey to distill user insights by asking more specific questions and distribute the survey in more channels.
               For qualitative research, I would also like to interview more users remotely and in-person to study their behavior while using competitor’s service.
@@ -367,10 +396,10 @@
     </div>
 
     <section class="other-projects">
-      <div class="project+1">
+      <div class="extra-project">
         <img src="images/weather_app.png">
       </div>
-      <div class="project+2">
+      <div class="extra-project">
         <img src="images/trading.png">
       </div>
     </section>
