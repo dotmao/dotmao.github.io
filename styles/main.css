@@ -200,8 +200,8 @@ nav li a {
 
 .showcase img {
   width: 100%;
-  max-width: 60rem ;
-  height: auto;
+  max-width: 55rem ;
+  height: 35rem;
   transition: 0.5s;
 }
 
@@ -210,26 +210,38 @@ nav li a {
     opacity: 0.8;
 }
 
-.project-showcase:hover .showcase {
-  background-color: #000000;
-  opacity: 1;
+.project-showcase:hover .hover-overlay {
+  background: #118888;
+  opacity: 0.8;
+}
+
+.hover-overlay {
+    box-sizing: border-box;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 35rem;
+    opacity: 0;
+}
+
+/* second project hover */
+
+.project-showcase:hover .hover-overlay2 {
+  background: #F2797F;
+  opacity: 0.8;
+}
+
+.hover-overlay2 {
+    box-sizing: border-box;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 35rem;
+    opacity: 0;
 }
 
 
 
-/* .hover-overlay::after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: all .5s ease;
-  background-color: red;
-  z-index: -1;
-} */
 
 .hover-text {
   color: white;
@@ -243,7 +255,7 @@ nav li a {
 }
 
 .project-showcase:hover .hover-text {
-  opacity: 1
+  opacity: 1;
 }
 
 .hover-text-weather-app {
