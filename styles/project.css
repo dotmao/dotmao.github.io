@@ -10,12 +10,6 @@ header {
   text-align: center;
 }
 
-body {
-    margin: 0;
-    position: relative;
-    padding-bottom: 6rem;
-    font-family: 'Raleway', sans-serif;
-}
 
 h1, h2, h3 {
       font-family: 'Oswald', sans-serif;
@@ -581,6 +575,8 @@ br {
   background: #F2797F;
   opacity: 1;
 }
+
+
 
 
 
