@@ -2,6 +2,10 @@ html {
   font-size: 10px;
 }
 
+
+
+
+
 header {
   background : url(../images/background-image.jpg) center / cover;
   height: 80vh;
@@ -34,6 +38,8 @@ p {
   z-index: 2
 }
 
+
+
 .nav-logo {
   float: left;
   position: relative;
@@ -45,10 +51,9 @@ p {
 .menu {
   float: right;
   padding: 40px 50px 30px 0px;
-
 }
 
-/* getting rid of the link underline   */
+/*--------- getting rid of the link underline   --------*/
 a:link {
     text-decoration: none;
 }
@@ -70,6 +75,69 @@ nav li a {
 .main-nav li {
   position: relative;
 }
+
+.menu-icon img {
+  display: none!important;
+}
+
+
+
+/*----------------- mobile nav  -------------------*/
+
+@media screen and (max-width: 425px) {
+
+  .nav-container {
+    background-color: transparent;
+    overflow: hidden;
+    width:100%;
+    position: absolute;
+  }
+
+  .menu {
+    padding-top: 3rem;
+  }
+
+  .nav-logo {
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+
+  .nav-logo img {
+    width: 3rem;
+  }
+
+  .nav li {
+    display: none;
+  }
+  .menu-icon {
+    display: inline-block;
+    padding-right: 1rem;
+  }
+
+}
+  .nav-container {
+    overflow: hidden;
+    width:100%;
+    position: absolute;
+  }
+
+  .nav-logo {
+    height: 1.5px;
+    margin-top: 2rem;
+    margin-left: 3rem;
+  }
+
+  .menu {
+    float: right;
+    padding-right: 2rem;
+  }
+
+  nav li {
+    margin: 0 1rem;
+  }
+}
+
+
 
 
 .main-nav a:after {
@@ -98,25 +166,65 @@ nav li a {
   height: 800px;
 }
 
+
+/*-------------------  mobile hero  ----------------*/
+@media screen and (max-width: 425px) {
+  .hero-container {
+    background-image: url("../images/mobile-background.png");
+    background-size: 100% 100%;
+    padding-bottom: 6rem;
+  }
+}
+
+
+
+
+.hero-content {
+    margin-left: 14rem;
+}
+
+/*---------------- tablet hero  --------------------*/
+
+@media only screen and (min-width:424px) and (max-width:768px) {
+  .hero-content {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+/* mobile hero */
+@media screen and (max-width: 425px) {
+  .hero-content {
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+}
+
 .hero-content h1 {
   color: #ffffff;
   font-size: 4rem;
   font-weight: bold;
   letter-spacing: 0.2rem;
-  padding-left: 14rem;
   padding-top: 20rem;
+}
+
+@media screen and (max-width: 425px) {
+  .hero-content h1 {
+    padding-top: 12rem;
+  }
 }
 
 .hero-content span {
   font-size:2.4rem;
 }
 
+
+
 .hero-content h3 {
   color: #ffffff;
   font-size: 2.4rem;
   letter-spacing: 0.2rem;
   margin-top: 2rem;
-  padding-left: 14rem;
   padding-top: 3rem;
 }
 
@@ -127,15 +235,33 @@ nav li a {
   line-height: 2.4rem;
   letter-spacing: 0.2rem;
   max-width: 750px;
-  padding-left: 14rem;
   padding-top: 8rem;
 }
 
-/* button stles */
+/* button styles */
 .hero-buttons {
   margin-top: 10rem;
   margin-left: 14rem;
 }
+
+@media screen and (max-width: 425px) {
+  .hero-buttons{
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+}
+
+@media only screen and (min-width:424px) and (max-width:768px) {
+  .hero-buttons{
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+
+
+
 
 .button {
   display: inline-block;
@@ -146,14 +272,12 @@ nav li a {
   font-size: 1.8rem;
   font-weight: 500;
   letter-spacing: 0.1rem;
-  /* width: 150px; */
   text-align: center;
   padding: 1.5rem 4rem;
 }
 
 .button2 {
   display: inline-block;
-  /* background-color: #7AABD3; */
   border-radius: 50px;
   border: 2px solid #7AABD3;
   color: #ffffff;
@@ -162,10 +286,21 @@ nav li a {
   font-weight: 500;
   margin-left: 10rem;
   letter-spacing: 0.2rem;
-  /* width: 150px; */
   text-align: center;
   padding: 1.5rem 4rem;
 }
+
+@media screen and (max-width: 425px) {
+  .button {
+    display: block;
+    margin-bottom: 3rem;
+  }
+  .button2 {
+    display: block;
+    margin-left: 0;
+  }
+}
+
 
 
 
@@ -175,12 +310,31 @@ nav li a {
   margin-top: 14rem;
 }
 
+@media screen and (max-width: 425px) {
+ .projects-container {
+   margin-left: 0;
+   margin-right: 0;
+   margin-top: 10rem;
+ }
+ .projects-container h2 {
+   text-align: center;
+ }
+}
+
+@media only screen and (min-width:424px) and (max-width:768px) {
+  .projects-container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 14rem;
+  }
+
+}
+
 .projects-container h2 {
  font-size: 3.6rem;
  font-weight: 500;
  letter-spacing: 0.2rem;
  margin-bottom: 4rem;
-
 }
 
 .project-showcase {
@@ -190,18 +344,36 @@ nav li a {
   overflow: hidden;
 }
 
+@media screen and (max-width: 425px) {
+  .project-showcase {
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width:424px) and (max-width:768px) {
+    .project-showcase {
+      display: block;
+    }
+    .showcase img {
+      max-width: 100%;
+    }
+}
+
 .showcase {
   box-sizing: border-box;
   position: relative;
   width: 100%;
   height: 35rem;
-
 }
+
 
 
 .showcase img {
   width: 100%;
-  max-width: 55rem ;
+  max-width: 55rem;
   height: 35rem;
   transition: 0.5s;
 }
@@ -241,6 +413,15 @@ nav li a {
     opacity: 0;
 }
 
+@media only screen and (min-width:424px) and (max-width:768px) {
+    .project-showcase {
+      display: block;
+    }
+    .showcase img {
+      max-width: 100%;
+    }
+}
+
 
 
 
@@ -253,6 +434,12 @@ nav li a {
   -webkit-transition: all .3s ease;
   text-align: center;
   opacity: 0;
+}
+
+@media screen and (max-width: 425px) {
+.hover-text {
+  left: 10%;
+  }
 }
 
 .project-showcase:hover .hover-text {
@@ -268,6 +455,18 @@ nav li a {
   -webkit-transition: all .3s ease;
   text-align: center;
   opacity: 0;
+}
+
+@media screen and (max-width: 425px) {
+.hover-text-weather-app {
+  left: 35%;
+  }
+}
+
+@media screen and (min-width:424px) and (max-width:768px) {
+  .hover-text-weather-app {
+    left: 40%;
+    }
 }
 
 
@@ -288,13 +487,27 @@ nav li a {
     font-size: 2.4rem;
 }
 
+/* Process */
+
 .process-container {
   margin-top: 14rem;
-  padding-left: 8rem;
-  padding-top: 8rem;
   background-image: url("../images/process-background.png");
   background-size: cover;
   height: 42rem;
+}
+
+@media screen and (max-width: 425px) {
+  .process-container {
+    margin-top: 0;
+    height: 56rem;
+  }
+}
+
+@media only screen and (min-width:424px) and (max-width:768px) {
+  .process-container {
+    margin-top: 8rem;
+    height: 68rem;
+  }
 }
 
 .process-container p {
@@ -302,15 +515,40 @@ nav li a {
   font-size: 2.4rem;
   display: inline-block;
   letter-spacing: 1px;
-  max-width: 400px;
+  max-width: 40rem;
   line-height: 4rem;
   padding-left: 10rem;
   padding-top: 4rem;
 }
 
+@media screen and (max-width: 425px) {
+  .process-container p {
+    display: block;
+    font-size: 1.8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width:424px) and (max-width:768px) {
+  .process-container p {
+    display: block;
+    max-width: 55rem;
+    padding-top: 8rem;
+  }
+}
+
 .process-container span {
   font-size: 3.2rem;
-  font-weight: 500;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 425px) {
+  .process-container span {
+    font-size: 2.4rem;
+
+  }
 }
 
 .illustration {
@@ -321,10 +559,40 @@ nav li a {
   top: 50%;
 }
 
+@media screen and (max-width: 425px) {
+  .illustration {
+    display: block;
+    padding-top: 5rem;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width:424px) and (max-width:768px) {
+  .illustration {
+    display: block;
+    padding-top: 5rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    width: 100%;
+  }
+}
+
 .illustration img {
+  display: block;
   width: 45rem;
   height: auto;
   padding-right: 10rem;
+}
+
+@media screen and (max-width: 425px) {
+  .illustration img {
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: : 3rem;
+    padding-right: 3rem;
+
+  }
 }
 
 .contact {
@@ -333,17 +601,26 @@ nav li a {
   margin-bottom: 140px;
 }
 
+@media screen and (max-width: 425px) {
+  .contact {
+    margin-top: 8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
 .contact h1{
   font-size: 4rem;
   padding-bottom: 4rem;
 }
 
-/* setting max width so the page won't span the full width of the page on large screen */
-main {
-  max-width: 900px
+@media screen and (max-width: 425px) {
+  .contact h1 {
+    font-size: 3.2rem;
+  }
 }
 
-/* footer style  */
+/* -------------footer style --------------------- */
 /* keeping it at the bottom of the page regardless of where the user's scrollbar is */
 
 footer {
@@ -354,10 +631,27 @@ footer {
   bottom: 0;
 }
 
+@media screen and (max-width: 425px) {
+  footer {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+}
+
+
 .footer-icons {
   display: inline-block;
   float: left;
   margin-left: 5rem;
+}
+
+@media screen and (max-width: 425px) {
+  .footer-icons {
+    display: block;
+    text-align: center;
+    float: none;
+    margin-left: 0;
+  }
 }
 
 .footer-icons li {
@@ -369,12 +663,20 @@ footer {
 
 
 
+
 .copyright-info {
   display: inline-block;
   float: right;
   margin-right: 5rem;
   padding-top: 3rem;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 425px) {
+  .copyright-info {
+    display: block;
+    text-align: center;
+  }
 }
 
 .copyright-info p {
@@ -389,11 +691,11 @@ footer {
 
 /* center the link */
 footer > ul {
-  margin: auto; /* the oldest horizontal centering trick */
+  /* margin: auto;  */
   font-size: 3rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
    header {
      display: flex;
    }
