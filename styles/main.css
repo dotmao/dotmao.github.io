@@ -3,9 +3,6 @@ html {
 }
 
 
-
-
-
 header {
   background : url(../images/background-image.jpg) center / cover;
   height: 80vh;
@@ -31,7 +28,6 @@ p {
 
 /* nav bar  */
 .nav-container {
-  background-color: #333333;
   overflow: hidden;
   width:100%;
   position: fixed;
@@ -76,68 +72,30 @@ nav li a {
   position: relative;
 }
 
-.menu-icon img {
+/* .menu-icon img {
   display: none!important;
-}
+} */
 
-
-
-/*----------------- mobile nav  -------------------*/
-
-@media screen and (max-width: 425px) {
-
-  .nav-container {
-    background-color: transparent;
-    overflow: hidden;
-    width:100%;
-    position: absolute;
-  }
-
-  .menu {
-    padding-top: 3rem;
-  }
-
-  .nav-logo {
-    margin-top: 3rem;
-    margin-left: 3rem;
-  }
-
-  .nav-logo img {
-    width: 3rem;
-  }
-
-  .nav li {
-    display: none;
-  }
-  .menu-icon {
-    display: inline-block;
-    padding-right: 1rem;
-  }
-
-}
-  .nav-container {
+.nav-container {
     overflow: hidden;
     width:100%;
     position: absolute;
   }
 
   .nav-logo {
-    height: 1.5px;
     margin-top: 2rem;
-    margin-left: 3rem;
+    margin-left: 6rem;
   }
 
   .menu {
     float: right;
-    padding-right: 2rem;
+    padding-right: 6rem;
   }
 
   nav li {
     margin: 0 1rem;
+    padding-right: 2rem;
   }
-}
-
-
 
 
 .main-nav a:after {
@@ -163,42 +121,15 @@ nav li a {
   background-image: url("../images/herobanner.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 800px;
+  height: 70rem;
 }
-
-
-/*-------------------  mobile hero  ----------------*/
-@media screen and (max-width: 425px) {
-  .hero-container {
-    background-image: url("../images/mobile-background.png");
-    background-size: 100% 100%;
-    padding-bottom: 6rem;
-  }
-}
-
-
 
 
 .hero-content {
     margin-left: 14rem;
 }
 
-/*---------------- tablet hero  --------------------*/
 
-@media only screen and (min-width:424px) and (max-width:768px) {
-  .hero-content {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-}
-
-/* mobile hero */
-@media screen and (max-width: 425px) {
-  .hero-content {
-    margin-right: 3rem;
-    margin-left: 3rem;
-  }
-}
 
 .hero-content h1 {
   color: #ffffff;
@@ -207,13 +138,6 @@ nav li a {
   letter-spacing: 0.2rem;
   padding-top: 20rem;
 }
-
-@media screen and (max-width: 425px) {
-  .hero-content h1 {
-    padding-top: 12rem;
-  }
-}
-
 .hero-content span {
   font-size:2.4rem;
 }
@@ -244,25 +168,6 @@ nav li a {
   margin-left: 14rem;
 }
 
-@media screen and (max-width: 425px) {
-  .hero-buttons{
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-
-}
-
-@media only screen and (min-width:424px) and (max-width:768px) {
-  .hero-buttons{
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-}
-
-
-
-
-
 .button {
   display: inline-block;
   background-color: #7AABD3;
@@ -290,45 +195,12 @@ nav li a {
   padding: 1.5rem 4rem;
 }
 
-@media screen and (max-width: 425px) {
-  .button {
-    display: block;
-    margin-bottom: 3rem;
-  }
-  .button2 {
-    display: block;
-    margin-left: 0;
-  }
-}
-
-
-
-
 /* projects */
 .projects-container {
   margin-left: 8rem;
   margin-top: 14rem;
 }
 
-@media screen and (max-width: 425px) {
- .projects-container {
-   margin-left: 0;
-   margin-right: 0;
-   margin-top: 10rem;
- }
- .projects-container h2 {
-   text-align: center;
- }
-}
-
-@media only screen and (min-width:424px) and (max-width:768px) {
-  .projects-container {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-top: 14rem;
-  }
-
-}
 
 .projects-container h2 {
  font-size: 3.6rem;
@@ -343,25 +215,6 @@ nav li a {
   width: auto;
   overflow: hidden;
 }
-
-@media screen and (max-width: 425px) {
-  .project-showcase {
-    display: block;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-}
-
-@media only screen and (min-width:424px) and (max-width:768px) {
-    .project-showcase {
-      display: block;
-    }
-    .showcase img {
-      max-width: 100%;
-    }
-}
-
 .showcase {
   box-sizing: border-box;
   position: relative;
@@ -413,15 +266,6 @@ nav li a {
     opacity: 0;
 }
 
-@media only screen and (min-width:424px) and (max-width:768px) {
-    .project-showcase {
-      display: block;
-    }
-    .showcase img {
-      max-width: 100%;
-    }
-}
-
 
 
 
@@ -434,12 +278,6 @@ nav li a {
   -webkit-transition: all .3s ease;
   text-align: center;
   opacity: 0;
-}
-
-@media screen and (max-width: 425px) {
-.hover-text {
-  left: 10%;
-  }
 }
 
 .project-showcase:hover .hover-text {
@@ -455,18 +293,6 @@ nav li a {
   -webkit-transition: all .3s ease;
   text-align: center;
   opacity: 0;
-}
-
-@media screen and (max-width: 425px) {
-.hover-text-weather-app {
-  left: 35%;
-  }
-}
-
-@media screen and (min-width:424px) and (max-width:768px) {
-  .hover-text-weather-app {
-    left: 40%;
-    }
 }
 
 
@@ -493,21 +319,13 @@ nav li a {
   margin-top: 14rem;
   background-image: url("../images/process-background.png");
   background-size: cover;
-  height: 42rem;
+  height: auto;
+  padding-bottom: 8rem;
 }
 
-@media screen and (max-width: 425px) {
-  .process-container {
-    margin-top: 0;
-    height: 56rem;
-  }
-}
+.process-content {
+  padding: 10rem 14rem;
 
-@media only screen and (min-width:424px) and (max-width:768px) {
-  .process-container {
-    margin-top: 8rem;
-    height: 68rem;
-  }
 }
 
 .process-container p {
@@ -517,83 +335,27 @@ nav li a {
   letter-spacing: 1px;
   max-width: 40rem;
   line-height: 4rem;
-  padding-left: 10rem;
   padding-top: 4rem;
 }
 
-@media screen and (max-width: 425px) {
-  .process-container p {
-    display: block;
-    font-size: 1.8rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    text-align: center;
-  }
-}
-
-@media only screen and (min-width:424px) and (max-width:768px) {
-  .process-container p {
-    display: block;
-    max-width: 55rem;
-    padding-top: 8rem;
-  }
-}
 
 .process-container span {
   font-size: 3.2rem;
   font-weight: 600;
 }
 
-@media screen and (max-width: 425px) {
-  .process-container span {
-    font-size: 2.4rem;
-
-  }
-}
-
 .illustration {
   display: inline-block;
   float: right;
-  margin-right: 8rem;
-  padding-bottom: 10rem;
-  top: 50%;
-}
-
-@media screen and (max-width: 425px) {
-  .illustration {
-    display: block;
-    padding-top: 5rem;
-    margin-right: 0;
-  }
-}
-
-@media only screen and (min-width:424px) and (max-width:768px) {
-  .illustration {
-    display: block;
-    padding-top: 5rem;
-    margin-right: 3rem;
-    margin-left: 3rem;
-    width: 100%;
-  }
 }
 
 .illustration img {
   display: block;
   width: 45rem;
   height: auto;
-  padding-right: 10rem;
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 425px) {
-  .illustration img {
-    width: 85%;
-    text-align: center;
-    margin: 0 auto;
-    padding-left: : 3rem;
-    padding-right: 3rem;
-
-  }
-}
 
 .contact {
   text-align: center;
@@ -601,23 +363,9 @@ nav li a {
   margin-bottom: 140px;
 }
 
-@media screen and (max-width: 425px) {
-  .contact {
-    margin-top: 8rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-}
-
 .contact h1{
   font-size: 4rem;
   padding-bottom: 4rem;
-}
-
-@media screen and (max-width: 425px) {
-  .contact h1 {
-    font-size: 3.2rem;
-  }
 }
 
 /* -------------footer style --------------------- */
@@ -631,13 +379,6 @@ footer {
   bottom: 0;
 }
 
-@media screen and (max-width: 425px) {
-  footer {
-    height: auto;
-    padding-bottom: 3rem;
-  }
-}
-
 
 .footer-icons {
   display: inline-block;
@@ -645,19 +386,10 @@ footer {
   margin-left: 5rem;
 }
 
-@media screen and (max-width: 425px) {
-  .footer-icons {
-    display: block;
-    text-align: center;
-    float: none;
-    margin-left: 0;
-  }
-}
-
 .footer-icons li {
   display: inline-block;
   padding-top: 3rem;
-  padding-left: 1rem;
+  padding-right: 1rem;
   color: #ffffff;
 }
 
@@ -672,31 +404,220 @@ footer {
   vertical-align: middle;
 }
 
-@media screen and (max-width: 425px) {
-  .copyright-info {
-    display: block;
-    text-align: center;
-  }
-}
-
 .copyright-info p {
   color: #7AABD3;
   font-size: 1.2rem;
 }
 
 
-/* body {
-  padding-bottom: 5rem;
-} */
-
 /* center the link */
 footer > ul {
-  /* margin: auto;  */
   font-size: 3rem;
 }
 
+
+/*------------mobile------------------- */
+@media screen and (max-width: 425px) {
+
+  .nav-container {
+    background-color: transparent;
+    overflow: hidden;
+    width:100%;
+    position: absolute;
+  }
+
+  .menu {
+    padding-top: 3rem;
+  }
+
+  .nav-logo {
+    margin-top: 2.4rem;
+    margin-left: 1.6rem;
+  }
+
+  .nav-logo img {
+    width: 3rem;
+  }
+
+  .nav li {
+    display: none;
+  }
+  .menu-icon {
+    display: inline-block;
+    padding-right: 1rem;
+  }
+
+  .hero-container {
+    background-image: url("../images/mobile-background.png");
+    background-size: 100% 100%;
+    padding-bottom: 6rem;
+  }
+
+  .hero-content {
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+
+  .hero-content h1 {
+    padding-top: 12rem;
+  }
+  .hero-content p {
+    padding-top: 4rem;
+  }
+
+  .hero-buttons{
+    margin-top: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .button {
+    display: block;
+    margin-bottom: 3rem;
+  }
+  .button2 {
+    display: block;
+    margin-left: 0;
+  }
+
+  .projects-container {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10rem;
+  }
+  .projects-container h2 {
+    text-align: center;
+  }
+
+  .project-showcase {
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .hover-text {
+    left: 12%;
+    }
+
+  .hover-text-weather-app {
+      left: 35%;
+    }
+
+  .process-container {
+      margin-top: 0;
+      height: 56rem;
+    }
+  .process-content {
+      padding-top: 5rem;
+    }
+
+  .process-container p {
+      display: block;
+      font-size: 1.8rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      padding-top: 0;
+      text-align: center;
+    }
+  .process-container span {
+      font-size: 2.4rem;
+    }
+
+  .illustration {
+      display: block;
+      padding-top: 5rem;
+      margin-right: 0;
+    }
+
+  .illustration img {
+      width: 85%;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+  .contact {
+      margin-top: 8rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+  .contact h1 {
+      font-size: 3.2rem;
+    }
+
+    footer {
+      height: auto;
+      padding-bottom: 3rem;
+    }
+
+    .footer-icons {
+      display: block;
+      text-align: center;
+      float: none;
+      margin-left: 0;
+    }
+
+    .copyright-info {
+      display: block;
+      text-align: center;
+      margin-right: 0;
+      float: none;
+    }
+}
+
+
+
+/*--------- tablet --------------*/
+@media only screen and (min-width:424px) and (max-width:768px) {
+  .hero-content {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .hero-buttons{
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .projects-container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 14rem;
+  }
+
+  .project-showcase {
+    display: block;
+  }
+  .showcase img {
+    max-width: 100%;
+  }
+
+  .hover-text-weather-app {
+    left: 40%;
+    }
+
+  .process-container {
+      margin-top: 8rem;
+      height: 68rem;
+    }
+
+  .process-container p {
+      display: block;
+      max-width: 55rem;
+      padding-top: 8rem;
+    }
+
+  .illustration {
+      display: block;
+      padding-top: 5rem;
+      width: 100%;
+    }
+}
+/*
 @media screen and (max-width: 1400px) {
    header {
      display: flex;
    }
- }
+ } */

@@ -12,12 +12,13 @@
       <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <!-- custom style -->
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <!-- <link rel="stylesheet" href="styles/main.css"> -->
     <link rel="stylesheet" href="styles/project.css">
     <!-- <link ref="stylesheet" href="styles/project.css"> -->
 
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="/static/fontawesome/fontawesome-all.css" rel="stylesheet"> -->
 
   </head>
   <body>
@@ -25,7 +26,9 @@
     <section class="nav">
         <div class="nav-container">
           <div class="nav-logo">
-            <a href="index.html"><img src="svgs/logo.svg"></a>
+            <a href="index.html">
+              <i class="fa fa-arrow-left" style="color: #333333;" aria-hidden="true"></i>
+            </a>
           </div>
           <div class="menu">
             <nav>
@@ -158,23 +161,29 @@
         <section class="challenges-and-solutions-container">
           <div data-aos="fade-left" class="challenge-content">
             <div class="challenge-content">
-            <h2>Challenges:</h2>
-              <p id="problem1">
-                  “I have millions of files in the cloud. It takes me forever to find the file I want.” –Jason
-              </p>
-              <br>
-              <p>
-                  Difficult to locate files.
-              </p>
-            </div>
-            <div class="challenge-content2">
-                <p id="problem">
-                    “Sometimes, I get frustrated during work when I need to look for certain information but the teammates are updating the file in real-time that makes it difficult for me because the file keeps changing constantly.” –Felix
+              <h2>Challenges:</h2>
+              <div class="user-comment">
+                <p>
+                      “I have millions of files in the cloud. It takes me forever to find the file I want.” –Jason
                 </p>
-                <br>
+              </div>
+              <div class="problem">
+                <p>
+                    Difficult to locate files.
+                </p>
+              </div>
+            </div>
+            <div class="challenge-content">
+              <div class="user-comment">
+                <p>
+                      “Sometimes, I get frustrated during work when I need to look for certain information but the teammates are updating the file in real-time that makes it difficult for me because the file keeps changing constantly.” –Felix
+                </p>
+              </div>
+              <div class="problem">
                 <p>
                     Poor collaboration controls.
                 </p>
+              </div>
             </div>
           </div>
           <div data-aos="fade-left" class="challenge-content">
@@ -226,6 +235,8 @@
               <img src="svgs/box_logo.svg">
               <img src="svgs/dropbox_logo.svg">
               <img src="svgs/google-drive-logo.svg">
+            </div>
+              <div>
               <p>In order to properly position this new service, it is vital to conduct a competitive analysis.
                 I used <span>SWOT analysis</span> method for this project to carefully compare competitors’ strengths and weaknesses, at the same time to seek opportunities in the industry.
                 Check out my competitive analysis <a href="https://docs.google.com/document/d/143wqqJhIZRmDTA-zfKukNvvfEod35WG7ikwhFr0ytQE/edit?usp=sharing">here</a>.
@@ -402,7 +413,7 @@
       </div>
       <div class="extra-project">
         <img src="images/trading.png">
-        <div class="overlay2">
+        <div class="overlay">
           <div class="project-name">
             Trading Platform
           </div>

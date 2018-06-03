@@ -1,13 +1,26 @@
+* {
+  box-sizing: border-box;
+}
 
 html {
   font-size: 10px;
 }
+
+
 
 header {
   background : url(../images/background-image.jpg) center / cover;
   height: 80vh;
   justify-content: center;
   text-align: center;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    padding-bottom: 60px;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -44,6 +57,98 @@ br {
   line-height: 2rem;
 }
 
+.nav-logo a i {
+  font-size: 2rem;
+}
+
+.nav-container {
+  overflow: hidden;
+  width:100%;
+  position: fixed;
+  z-index: 2
+}
+
+
+
+.nav-logo {
+  float: left;
+  position: relative;
+  height: 20px;
+  margin: 20px 0px 20px 50px;
+}
+
+
+.menu {
+  float: right;
+  padding: 40px 50px 30px 0px;
+}
+
+/*--------- getting rid of the link underline   --------*/
+a:link {
+    text-decoration: none;
+}
+
+nav li {
+  display: inline;
+  margin: 0px 30px;
+  font-family: 'Oswald', sans-serif;
+}
+
+nav li a {
+  color: #333333;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+
+.main-nav li {
+  position: relative;
+}
+
+/* .menu-icon img {
+  display: none!important;
+} */
+
+.nav-container {
+    overflow: hidden;
+    width:100%;
+    position: absolute;
+  }
+
+  .nav-logo {
+    margin-top: 2rem;
+    margin-left: 6rem;
+  }
+
+  .menu {
+    float: right;
+    padding-right: 6rem;
+  }
+
+  nav li {
+    margin: 0 1rem;
+    padding-right: 2rem;
+  }
+
+
+.main-nav a:after {
+  opacity:0;
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background-color: #7AABD3;
+  transition: all .5s;
+}
+
+.main-nav li:hover a:after {
+  width: 40px;
+  opacity: 1;
+  transition: all .5s;
+}
 
 
 .banner-image {
@@ -60,14 +165,11 @@ br {
 }
 
 .intro-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
 }
 
 .intro-text p {
-  max-width: 80rem;
+  max-width: 65rem;
 }
 
 
@@ -76,11 +178,6 @@ br {
   letter-spacing: 0.2rem;
 }
 
-/* #para-container {
-  margin-left: 25rem;
-  max-width: 60%;
-  line-height: 2rem;
-} */
 
 .intro p {
   padding-top: 4rem;
@@ -162,18 +259,11 @@ br {
 
 /* case study details */
 
-.case-study-container {
-  margin-top: 14rem;
-}
-
 .overview-container {
-  margin-bottom: 14rem;
+  margin: 14rem 18rem;
 }
 
 .overview-header {
-  margin-left: 20rem;
-  margin-right: 20rem;
-  margin-bottom: 14rem;
   padding-bottom: 5rem;
 }
 
@@ -186,10 +276,10 @@ br {
 .overview-header h2:after {
   content: "";
   border-bottom: 0.4rem solid #7AABD3;
-  left: 20rem;
+  left: 0;
   position: absolute;
   width: 6rem;
-  padding-top: 2rem;
+  padding-top: 6rem;
 }
 
 
@@ -201,12 +291,16 @@ br {
   padding-bottom: 1rem;
 }
 
+.overview-text {
+  width: 80%
+}
+
 
 
 .overview-text p {
   font-size: 1.8rem;
-  line-height: 3rem;
-  max-width: 75%;
+  line-height: 4rem;
+  max-width: 100%;
 }
 
 
@@ -214,7 +308,7 @@ br {
 .challenges-and-solutions-container {
   width: 100%;
   background-color: #CDD4DC;
-  padding: 5rem 20rem;
+  padding: 5rem 18rem;
 }
 
 
@@ -230,16 +324,19 @@ br {
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
   line-height: 3rem;
-  max-width: 70%;
+  max-width: 100%;
   /* padding-bottom: 2rem; */
 }
 
 
-
-#problem {
+.user-comment {
   font-weight: 700;
+  padding-bottom: 1rem;
 }
 
+.problem {
+  padding-bottom: 3rem;
+}
 #solution {
   padding-top: 3rem;
 }
@@ -253,7 +350,6 @@ br {
 }
 
 .case-study-process h2 {
-  margin-top: 14rem;
   padding-bottom: 5rem;
 }
 
@@ -303,26 +399,28 @@ br {
 }
 
 /* competitors */
+.competitors {
+  margin-top: 10rem;
+}
 .company-logos {
   padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
 }
 
 .company-logos img {
   margin-left: 3rem;
-  width: 15rem;
+  width: 25rem;
   padding-right: 10rem;
 }
 
 .company-logos p {
   padding-top: 5rem;
 }
-
-.competitors {
-  margin-top: 5rem;
-}
-
 /* persona */
-
+.user-persona {
+  margin-top: 10rem;
+}
 
 .user-persona p {
   padding-bottom: 5rem;
@@ -346,6 +444,11 @@ br {
   max-width: 40rem;
 }
 
+/*  user stories */
+.ia-user-stories {
+  margin-top: 10rem;
+}
+
 .ia-user-stories p {
   padding-bottom: 5rem;
 }
@@ -353,9 +456,9 @@ br {
 .ia-user-stories img {
   padding-left: 2rem;
 }
-
-.ia-lo-fi-contaner {
-
+/*  */
+.ia-lo-fi-contaner{
+  margin-top: 10rem;
 }
 
 .sketch-container {
@@ -394,6 +497,10 @@ br {
   padding-bottom: 5rem;
 }
 
+.branding {
+  margin-top: 10rem;
+}
+
 .branding-content {
   display: flex;
   justify-content: space-between;
@@ -416,6 +523,10 @@ br {
 
 #style-guide p {
   padding-top: 5rem;
+}
+
+.hi-fi {
+  margin-top: 10rem;
 }
 
 .hi-fi p {
@@ -455,13 +566,6 @@ br {
   max-width: 50rem;
 }
 
-/* .demo-img-text p {
-  font-size: 1.6rem;
-  letter-spacing: 0.1rem;
-  line-height: 3rem;
-  padding-left: 5rem;
-} */
-
 .demo-img-text1 {
   grid-column: 2/3;
   font-size: 1.6rem;
@@ -489,12 +593,25 @@ br {
   text-align: center;
 }
 
+.button {
+  display: inline-block;
+  background-color: #7AABD3;
+  border-radius: 50px;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  padding: 1.5rem 4rem;
+}
+
 .reflection {
   margin-top: 14rem;
 }
 
 .reflection-container {
-  background-color: #D7DADD;
+  background-color: #eeeeee;
   padding: 10rem 20rem;
 }
 
@@ -516,6 +633,7 @@ br {
 .other-projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 100%;
 }
 
 .extra-project img {
@@ -530,6 +648,7 @@ br {
   margin: 0 auto;
   position: relative;
 }
+
 
 .project-name {
   color: #fff;
@@ -562,18 +681,313 @@ br {
   opacity: 1;
 }
 
-.overlay2 {
-    box-sizing: border-box;
-    top: 0;
-    position: absolute;
-    width: 100%;
-    height: 40rem;
-    opacity: 0;
-}
-
 .extra-project:hover .overlay2 {
   background: #F2797F;
   opacity: 1;
+}
+
+/*-------------footer-------------------- */
+
+footer {
+  position: absolute;
+  background-color: #333333;
+  height: 8rem;
+  width: 100%;
+  bottom: 0;
+}
+
+
+.footer-icons {
+  display: inline-block;
+  float: left;
+  margin-left: 5rem;
+}
+
+.footer-icons li {
+  display: inline-block;
+  padding-top: 3rem;
+  padding-right: 1rem;
+  color: #ffffff;
+}
+
+
+
+
+.copyright-info {
+  display: inline-block;
+  float: right;
+  margin-right: 5rem;
+  padding-top: 3rem;
+  vertical-align: middle;
+}
+
+.copyright-info p {
+  color: #7AABD3;
+  font-size: 1.2rem;
+}
+
+
+/* center the link */
+footer > ul {
+  font-size: 3rem;
+}
+
+/*-------------------mobile------------------------------*/
+@media screen and (max-width: 425px) {
+
+
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  .nav-logo {
+    margin-top: 2.4rem;
+    margin-left: 1.6rem;
+  }
+
+  .nav li {
+    display: none;
+  }
+
+
+  .intro-text p {
+    padding-top: 3rem;
+  }
+
+  .intro {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin: 5rem 2rem;
+  }
+  .roles-tools-container {
+    padding-left: 0;
+  }
+  .roles h3 {
+    text-align: center;
+  }
+
+  .roles-content li {
+    padding-right: 0;
+  }
+
+  .roles-content ul li {
+    display: block;
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+
+  .tools {
+    text-align: center;
+  }
+  .tools h3 {
+    text-align: center;
+  }
+
+  .icons li {
+    display: block;
+    padding-right: 0;
+  }
+
+  .overview-container {
+    margin: 8rem 2rem;
+  }
+  .overview {
+    display: block;
+  }
+  .overview-text {
+    width: 100%;
+  }
+  .overview-header h2:after {
+    content: "";
+    border-bottom: 0.4rem solid #7AABD3;
+    left: 0rem;
+    position: absolute;
+    width: 6rem;
+    padding-top: 6rem;
+  }
+
+  .overview-header {
+    padding-bottom: 3rem;
+  }
+  .overview-text p {
+    max-width: 100%;
+    font-size: 1.6rem;
+  }
+  .challenges-and-solutions-container {
+    padding: 5rem 2rem;
+  }
+
+  .case-study-process {
+    margin: 5rem 2rem;
+  }
+
+  .user-research {
+    padding-top: 5rem;
+  }
+
+  .research {
+    display: block;
+  }
+  .research-sum {
+    max-width: 100%;
+  }
+  .objectives {
+    max-width: 100%;
+    padding-top: 5rem;
+  }
+
+  .company-logos img {
+    padding-bottom: 5rem;
+  }
+
+
+  .persona {
+    display: block;
+  }
+
+  .persona-image img {
+    max-width: 100%;
+  }
+
+  .ia-user-stories img {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .sketch-container img {
+    height: 60rem;
+  }
+  .sketch-text {
+    color: white;
+    letter-spacing: 0.1rem;
+    font-size: 1.8rem;
+    line-height: 4rem;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 2%;
+    transform: none;
+  }
+
+  .lo-fi-mockup-container img {
+    max-width: 100%;
+  }
+
+  .branding-content {
+    display: block;
+  }
+
+  .name-sketch {
+    padding-bottom: 5rem;
+  }
+  .name-sketch img{
+    max-width: 100%;
+  }
+  #style-guide img {
+    max-width: 100%;
+    padding-left: 0;
+  }
+  .hi-fi-wrapper {
+    display: block;
+  }
+  .img1 {
+    padding-bottom: 3rem;
+  }
+  .img2 {
+    padding-bottom: 3rem;
+  }
+  .img3 {
+    padding-bottom: 3rem;
+  }
+  .img4 {
+    padding-bottom: 3rem;
+  }
+  .img5 {
+    padding-bottom: 3rem;
+  }
+  .img6 {
+    padding-bottom: 3rem;
+  }
+
+  .img1 img {
+    max-width: 100%;
+  }
+  .img2 img {
+    max-width: 100%;
+  }
+  .img3 img {
+    max-width: 100%;
+  }
+  .img4 img {
+    max-width: 100%;
+  }
+  .img5 img {
+    max-width: 100%;
+  }
+  .img6 img {
+    max-width: 100%;
+  }
+  .dashboard-wrapper {
+    display: block;
+    margin-top: 0;
+  }
+  .demo-img {
+    display: none;
+  }
+  .demo-img-text1 {
+    padding-left: 0;
+  }
+  .demo-img-text2 {
+    padding-left: 0;
+  }
+  .reflection {
+    margin-top: 10rem;
+  }
+  .reflection-container {
+    padding: 10rem 2rem;
+  }
+  .back-to-top {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  .other-projects {
+    display: block;
+  }
+
+  .project-name {
+    top: 25%;
+    left: 50%;
+    text-align: center;
+    line-height: 3rem;
+  }
+
+  footer {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .footer-icons {
+    display: block;
+    text-align: center;
+    float: none;
+    margin-left: 0;
+  }
+
+  .copyright-info {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+    float: none;
+  }
+
+
 }
 
 
