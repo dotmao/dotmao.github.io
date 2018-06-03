@@ -506,10 +506,12 @@ footer > ul {
 
   .process-container {
       margin-top: 0;
-      height: 56rem;
+      height: 52rem;
     }
   .process-content {
       padding-top: 5rem;
+      padding-left: 0;
+      padding-right: 0;
     }
 
   .process-container p {
