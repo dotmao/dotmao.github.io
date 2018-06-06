@@ -1,10 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    padding-bottom: 60px;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+      font-family: 'Oswald', sans-serif;
+}
+
 h1 {
   font-size: 4.2rem;
   letter-spacing: 0.1rem;
 }
 
 h2 {
-  font-size: 3.2rem;
+  font-size: 3.6rem;
   letter-spacing: 0.1rem;
 }
 
@@ -18,6 +37,106 @@ span {
   font-weight: 600;
   font-size: 1.8rem;
 }
+
+/*-----------------nav----------------*/
+.nav-logo a i {
+  font-size: 2rem;
+}
+
+.nav-container {
+  overflow: hidden;
+  width:100%;
+  position: fixed;
+  z-index: 2
+}
+
+
+
+.nav-logo {
+  float: left;
+  position: relative;
+  height: 20px;
+  margin: 20px 0px 20px 50px;
+}
+
+
+.menu {
+  float: right;
+  padding: 40px 50px 30px 0px;
+}
+
+/*--------- getting rid of the link underline   --------*/
+a:link {
+    text-decoration: none;
+}
+
+nav li {
+  display: inline;
+  margin: 0px 30px;
+  font-family: 'Oswald', sans-serif;
+}
+
+nav li a {
+  color: #333333;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+
+.main-nav li {
+  position: relative;
+}
+
+/* .menu-icon img {
+  display: none!important;
+} */
+
+.nav-container {
+    overflow: hidden;
+    width:100%;
+    position: absolute;
+  }
+
+  .nav-logo {
+    margin-top: 2rem;
+    margin-left: 6rem;
+  }
+
+  .menu {
+    float: right;
+    padding-right: 6rem;
+  }
+
+  nav li {
+    margin: 0 1rem;
+    padding-right: 2rem;
+  }
+
+
+.main-nav a:after {
+  opacity:0;
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background-color: #7AABD3;
+  transition: all .5s;
+}
+
+.main-nav li:hover a:after {
+  width: 40px;
+  opacity: 1;
+  transition: all .5s;
+}
+
+
+.banner-image {
+  width: 100%;
+}
+
 
 
 .self-intro-container {
@@ -101,4 +220,69 @@ span {
 .view-resume a {
   padding-left: 6rem;
   font-size: 1.6rem;
+}
+
+.contact {
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #7AABD3;
+  border-radius: 50px;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  padding: 1.5rem 4rem;
+}
+
+
+/*---------footer------ */
+footer {
+  position: absolute;
+  background-color: #333333;
+  height: 8rem;
+  width: 100%;
+  bottom: 0;
+}
+
+
+.footer-icons {
+  display: inline-block;
+  float: left;
+  margin-left: 5rem;
+}
+
+.footer-icons li {
+  display: inline-block;
+  padding-top: 3rem;
+  padding-right: 1rem;
+  color: #ffffff;
+}
+
+
+
+
+.copyright-info {
+  display: inline-block;
+  float: right;
+  margin-right: 5rem;
+  padding-top: 3rem;
+  vertical-align: middle;
+}
+
+.copyright-info p {
+  color: #7AABD3;
+  font-size: 1.2rem;
+}
+
+
+/* center the link */
+footer > ul {
+  font-size: 3rem;
 }
