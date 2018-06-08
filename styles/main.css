@@ -252,12 +252,12 @@ nav li a {
 
 /* second project hover */
 
-.project-showcase:hover .hover-overlay2 {
+.project-showcase:hover #hover-overlay2 {
   background: #F2797F;
   opacity: 0.8;
 }
 
-.hover-overlay2 {
+#hover-overlay2 {
     box-sizing: border-box;
     top: 0;
     position: absolute;
@@ -320,12 +320,11 @@ nav li a {
   background-image: url("../images/process-background.png");
   background-size: cover;
   height: auto;
-  padding-bottom: 8rem;
+  padding-bottom: 10rem;
 }
 
 .process-content {
   padding: 10rem 14rem;
-
 }
 
 .process-container p {
@@ -333,7 +332,7 @@ nav li a {
   font-size: 2.4rem;
   display: inline-block;
   letter-spacing: 1px;
-  max-width: 40rem;
+  max-width: 45%;
   line-height: 4rem;
   padding-top: 4rem;
 }
@@ -359,8 +358,8 @@ nav li a {
 
 .contact {
   text-align: center;
-  margin-top: 140px;
-  margin-bottom: 140px;
+  margin-top: 14rem;
+  margin-bottom: 14rem;
 }
 
 .contact h1{
@@ -417,7 +416,7 @@ footer > ul {
 
 
 /*------------mobile------------------- */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 750px) {
 
   .nav-container {
     background-color: transparent;
@@ -432,7 +431,7 @@ footer > ul {
 
   .nav-logo {
     margin-top: 2.4rem;
-    margin-left: 1.6rem;
+    margin-left: 2.4rem;
   }
 
   .nav-logo img {
@@ -497,7 +496,7 @@ footer > ul {
   }
 
   .hover-text {
-    left: 12%;
+    left: 18%;
     }
 
   .hover-text-weather-app {
@@ -510,8 +509,8 @@ footer > ul {
     }
   .process-content {
       padding-top: 5rem;
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
 
   .process-container p {
@@ -521,6 +520,7 @@ footer > ul {
       padding-right: 3rem;
       padding-top: 0;
       text-align: center;
+      max-width: 100%;
     }
   .process-container span {
       font-size: 2.4rem;
@@ -572,7 +572,7 @@ footer > ul {
 
 
 /*--------- tablet --------------*/
-@media only screen and (min-width:424px) and (max-width:768px) {
+@media only screen and (min-width: 751px) and (max-width: 991px) {
   .hero-content {
     margin-left: 5rem;
     margin-right: 5rem;
@@ -586,7 +586,7 @@ footer > ul {
   .projects-container {
     margin-left: 5rem;
     margin-right: 5rem;
-    margin-top: 14rem;
+    margin-top: 10rem;
   }
 
   .project-showcase {
@@ -602,13 +602,17 @@ footer > ul {
 
   .process-container {
       margin-top: 8rem;
-      height: 68rem;
+      height: 58rem;
     }
 
-  .process-container p {
+  .process-content {
+    padding: 8rem 8rem;
+  }
+
+  .process-content p {
       display: block;
-      max-width: 55rem;
-      padding-top: 8rem;
+      max-width: 100%;
+      padding-top: 0;
     }
 
   .illustration {
@@ -616,7 +620,28 @@ footer > ul {
       padding-top: 5rem;
       width: 100%;
     }
+  .contact {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
 }
+
+@media only screen and (min-width: 1024px) {
+  .process-content {
+    padding: 8rem 8rem;
+  }
+  .showcase img {
+    max-width: 45rem;
+  }
+  .hover-text {
+    left: 20%
+  }
+}
+
+
+
+
 /*
 @media screen and (max-width: 1400px) {
    header {

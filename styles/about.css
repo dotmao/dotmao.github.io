@@ -147,7 +147,7 @@ nav li a {
 
 
 .pic {
-  margin-left: 18rem;
+  margin-left: 24rem;
   position: relative;
 }
 .my-avatar {
@@ -162,18 +162,18 @@ nav li a {
   left: -1.2rem;
 }
 
-.intro {
-  margin-right: 18rem;
+.introduction {
+  margin-right: 24rem;
 }
 
-.intro h1 {
-  max-width: 55rem;
+.introduction h1 {
+  max-width: 100%;
   font-weight: 600;
   padding-top: 10rem;
   padding-bottom: 3rem;
 }
 
-.intro h2 {
+.introduction h2 {
   font-size: 3.2rem;
   font-weight: 500;
 }
@@ -205,7 +205,7 @@ nav li a {
 }
 
 .p {
-  max-width: 92rem;
+  max-width: 95%;
 }
 
 .bold-paragraph {
@@ -224,8 +224,8 @@ nav li a {
 
 .contact {
   text-align: center;
-  margin-top: 140px;
-  margin-bottom: 140px;
+  margin-top: 14rem;
+  margin-bottom: 14rem;
 }
 
 .button {
@@ -285,4 +285,169 @@ footer {
 /* center the link */
 footer > ul {
   font-size: 3rem;
+}
+
+
+@media screen and (max-width: 750px) {
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+  #logo img {
+    display: none;
+  }
+  .nav-logo {
+    margin-top: 2.4rem;
+    margin-left: 2.4rem;
+  }
+  .nav li {
+    display: none;
+  }
+  .self-intro-container {
+    padding-top: 10rem;
+    display: block;
+  }
+  .my-avatar {
+    max-width: 100%;
+  }
+  .avatar-circle {
+    top: -1.3rem;
+    left: -1.3rem;
+    max-width: 110%;
+  }
+  .pic {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .introduction {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .introduction h1 {
+    padding-top: 5rem;
+  }
+  .introduction h1, h2{
+    text-align: center;
+    line-height: 5rem;
+  }
+
+
+  footer {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .footer-icons {
+    display: block;
+    text-align: center;
+    float: none;
+    margin-left: 0;
+  }
+
+  .copyright-info {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+    float: none;
+  }
+  .story-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .story-container h1 {
+    text-align: center;
+  }
+  .container img {
+    max-width: 2.4rem;
+  }
+  .p {
+    max-width: 90%;
+  }
+  .view-resume a {
+    padding-left: 3rem;
+  }
+  .contact {
+    margin-top: 10rem;
+  }
+
+}
+
+
+/*---------------tablet----------- */
+@media only screen and (min-width: 751px) and (max-width: 991px) {
+  #logo img {
+    display: none;
+  }
+  .nav-logo {
+    margin-left: 2.4rem;
+  }
+  .nav li a {
+    font-size: 1.6rem;
+  }
+
+  .menu {
+    padding-right: 0.4rem;
+    padding-top: 2.4rem;
+  }
+  .pic {
+    margin-left: 5rem;
+  }
+  .introduction {
+    margin-right: 2rem;
+  }
+  .introduction h1 {
+    padding-top: 5rem;
+  }
+  .my-avatar {
+    max-width: 90%;
+  }
+  .avatar-circle {
+    top: -1.3rem;
+    left: -1.3rem;
+    max-width: 100%;
+  }
+  .story-container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .view-resume a {
+    padding-left: 5rem;
+  }
+  .p {
+    max-width: 92%;
+  }
+
+}
+
+
+/*---------media laptop------------- */
+
+@media screen and (min-width: 824px) and (max-width: 1024px) {
+  #arrow-back {
+    display: none;
+  }
+  .pic {
+    margin-left: 8rem;
+  }
+  .introduction {
+    margin-right: 5rem;
+  }
+  .story-container {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+  .p {
+    max-width: 92%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  #arrow-back {
+    display: none;
+  }
 }
