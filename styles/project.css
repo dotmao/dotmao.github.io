@@ -1092,6 +1092,7 @@ footer > ul {
   .ia-user-stories img {
     padding-left: 0;
   }
+
   .lo-fi-mockup-container {
     padding-left: 0;
   }
@@ -1168,6 +1169,18 @@ footer > ul {
   .company-logos img {
     max-width: 20rem;
     padding-right: 5rem;
+  }
+  .user-flow-img img {
+    padding-left: 0;
+  }
+  .lo-fi-mockup-container {
+    padding-left: 0;
+  }
+  .branding-content img  {
+    max-width: 90%;
+  }
+  .name-content {
+    max-width: 40%;
   }
 }
 
