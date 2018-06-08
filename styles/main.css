@@ -76,6 +76,10 @@ nav li a {
     margin-top: 2rem;
 }
 
+nav {
+  margin-right: 8rem;
+}
+
   nav li {
     margin: 0 1rem;
     padding-right: 2rem;
@@ -106,11 +110,7 @@ nav li a {
   background-size: cover;
   background-repeat: no-repeat;
   height: 70rem;
-}
-
-
-.hero-content {
-    margin-left: 14rem;
+  padding-left: 14rem;
 }
 
 
@@ -142,14 +142,13 @@ nav li a {
   font-weight: 500;
   line-height: 2.4rem;
   letter-spacing: 0.2rem;
-  max-width: 750px;
+  max-width: 50%;
   padding-top: 8rem;
 }
 
 /* button styles */
 .hero-buttons {
   margin-top: 10rem;
-  margin-left: 14rem;
 }
 
 .button {
@@ -399,7 +398,7 @@ footer > ul {
 
 
 /*------------mobile------------------- */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 599px) {
 
   .nav-container {
     background-color: transparent;
@@ -412,13 +411,15 @@ footer > ul {
     padding-top: 3rem;
   }
 
-  .nav-logo {
-    margin-top: 2.4rem;
-    margin-left: 2.4rem;
+  .nav-container {
+      padding: 1.8rem 1.8rem;
   }
 
+  .nav-logo {
+    margin-top: 0;
+  }
   .nav-logo img {
-    width: 3rem;
+    width: 2.4rem;
   }
 
   .nav li {
@@ -433,6 +434,7 @@ footer > ul {
     background-image: url("../images/mobile-background.png");
     background-size: 100% 100%;
     padding-bottom: 6rem;
+    padding-left: 0;
   }
 
   .hero-content {
@@ -444,6 +446,7 @@ footer > ul {
     padding-top: 12rem;
   }
   .hero-content p {
+    max-width: 100%;
     padding-top: 4rem;
   }
 
@@ -476,6 +479,9 @@ footer > ul {
     position: relative;
     width: 100%;
     overflow: hidden;
+  }
+  .show-case img {
+    width: 100%;
   }
 
   .hover-text {
@@ -556,9 +562,19 @@ footer > ul {
 
 /*--------- tablet --------------*/
 @media only screen and (min-width: 751px) and (max-width: 991px) {
+  .hero-container {
+    padding-left: 5rem;
+
+  }
+
+
   .hero-content {
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+
+  .hero-content p {
+    max-width: 100%;
   }
 
   .hero-buttons{
