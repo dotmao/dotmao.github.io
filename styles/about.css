@@ -55,8 +55,6 @@ input {
   z-index: 2
 }
 
-
-
 .nav-logo {
   float: left;
   position: relative;
@@ -156,11 +154,12 @@ input {
   margin-left: 24rem;
   position: relative;
 }
-.my-avatar {
+
+/* .my-avatar {
   position: relative;
   top: 0;
   left: 0;
-}
+} */
 
 .avatar-circle {
   position: absolute;
@@ -444,17 +443,13 @@ footer > ul {
     padding-top: 10rem;
     display: block;
   }
-  .my-avatar {
-    max-width: 100%;
-  }
-  .avatar-circle {
-    top: -1.3rem;
-    left: -1.3rem;
-    max-width: 110%;
-  }
   .pic {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 0;
+  }
+  .my-avatar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
   }
   .introduction {
     margin-left: 2rem;
@@ -535,14 +530,9 @@ footer > ul {
   .introduction h1 {
     padding-top: 5rem;
   }
-  .my-avatar {
+  /* .my-avatar {
     max-width: 90%;
-  }
-  .avatar-circle {
-    top: -1.3rem;
-    left: -1.3rem;
-    max-width: 100%;
-  }
+  } */
   .story-container {
     margin-left: 5rem;
     margin-right: 5rem;
