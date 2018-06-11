@@ -313,7 +313,7 @@ nav {
   font-size: 1.8rem;
   position: absolute;
   top: 45%;
-  left: 40%;
+  left: 35%;
   -webkit-transition: all .3s ease;
   text-align: center;
   opacity: 0;
@@ -785,9 +785,6 @@ footer > ul {
     left: 10%
   }
   .hover-text-weather-app {
-    left: 35%;
-  }
-  .hover-trading-app {
     left: 35%;
   }
 }
