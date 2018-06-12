@@ -160,8 +160,9 @@ nav {
 }
 
 /* button styles */
-.hero-buttons {
-  margin-top: 10rem;
+.buttons {
+  display: flex;
+  margin-top: 8%;
 }
 
 .button {
@@ -176,25 +177,18 @@ nav {
   text-align: center;
   padding: 1.5rem 4rem;
 }
-
-.button2 {
-  display: inline-block;
-  border-radius: 50px;
-  border: 2px solid #7AABD3;
-  color: #ffffff;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-left: 10rem;
-  letter-spacing: 0.2rem;
-  text-align: center;
-  padding: 1.5rem 4rem;
+#social-icons {
+  font-size: 5rem;
+  margin-left: 5rem;
 }
+#social-icons li {
+  padding-right: 3rem;
+  padding-top: 0;
+}
+
 
 /* projects */
 .projects-container {
-  margin-left: 8rem;
-  margin-right: 8rem;
   margin-top: 14rem;
 }
 
@@ -203,6 +197,7 @@ nav {
  font-weight: 500;
  letter-spacing: 0.2rem;
  margin-bottom: 4rem;
+ text-align: center;
 }
 .projects-wrapper {
   display: flex;
@@ -313,7 +308,7 @@ nav {
   font-size: 1.8rem;
   position: absolute;
   top: 45%;
-  left: 35%;
+  left: 40%;
   -webkit-transition: all .3s ease;
   text-align: center;
   opacity: 0;
@@ -342,7 +337,6 @@ nav {
 /* Process */
 
 .process-container {
-  margin-top: 14rem;
   background-image: url("../images/process-background.png");
   background-size: cover;
   height: auto;
@@ -591,20 +585,33 @@ footer > ul {
     max-width: 100%;
     padding-top: 4rem;
   }
-
-  .hero-buttons{
-    margin-top: 5rem;
+  .buttons {
+    display: block;
     margin-left: 3rem;
     margin-right: 3rem;
+    margin-top: 20%;
+  }
+  .hero-button {
+    margin-top: 5rem;
   }
 
   .button {
     display: block;
     margin-bottom: 3rem;
   }
-  .button2 {
-    display: block;
+  .social {
+    margin-top: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  #social-icons {
     margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 4rem;
+  }
+  #social-icons li {
+    padding-right: 0;
   }
 
   .projects-container {
@@ -706,12 +713,11 @@ footer > ul {
 
 
 /*--------- tablet --------------*/
-@media only screen and (min-width: 751px) and (max-width: 991px) {
+@media only screen and (min-width: 600px) and (max-width: 991px) {
   .hero-container {
     padding-left: 5rem;
 
   }
-
 
   .hero-content {
     margin-left: 5rem;
@@ -722,7 +728,7 @@ footer > ul {
     max-width: 100%;
   }
 
-  .hero-buttons{
+  .hero-button {
     margin-left: 5rem;
     margin-right: 5rem;
   }
@@ -777,24 +783,4 @@ footer > ul {
 
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
-  .process-content {
-    padding: 8rem 8rem;
-  }
-  .hover-text {
-    left: 10%
-  }
-  .hover-text-weather-app {
-    left: 35%;
-  }
-}
-
-
-
-
-/*
-@media screen and (max-width: 1400px) {
-   header {
-     display: flex;
-   }
- } */
+@media only screen and (min-width: 1024px) and (max-width: 1200px)

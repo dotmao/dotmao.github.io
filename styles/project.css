@@ -648,6 +648,13 @@ nav li a {
   font-size: 2.4rem;
   text-align: center;
 }
+.back-to-top a:link {
+    text-decoration: none;
+    color: #333333;
+}
+.back-to-top a:hover {
+  color: #7AABD3
+}
 
 .other-projects {
   display: grid;
@@ -1147,7 +1154,7 @@ footer > ul {
 }
 
 /*----------------tablet---------------*/
-@media only screen and (min-width: 751px) and (max-width: 991px) {
+@media only screen and (min-width: 600px) and (max-width: 991px) {
   h2 {
     font-size: 2.4rem;
     font-weight: 600;
@@ -1204,9 +1211,15 @@ footer > ul {
   }
   .persona {
     display: block;
+    padding-left: 10%;
+    padding-right:10%;
+
+  }
+  .persona-list li {
+    max-width: 100%;
   }
   .persona-image img {
-    max-width: 100%;
+    width: 100%;
   }
 
   .ia-user-stories img {
@@ -1226,7 +1239,7 @@ footer > ul {
     display: block;
   }
   .branding-content img {
-    max-width: 100%;
+    width: 150%;
   }
   .name-content {
     max-width: 100%;
@@ -1234,6 +1247,7 @@ footer > ul {
   }
   #style-guide img {
     max-width: 100%;
+    padding-left: 0;
   }
   .hi-fi-wrapper {
     grid-template-columns: 1fr 1fr;
@@ -1263,6 +1277,7 @@ footer > ul {
     margin-top: 10rem;
     margin-bottom: 10rem;
   }
+
   .other-projects {
     display: block;
   }
