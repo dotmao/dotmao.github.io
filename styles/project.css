@@ -667,7 +667,7 @@ nav li a {
   width: 100%;
 }
 
-.extra-project img {
+.extra-project  {
   width: 100%;
   height: 40rem;
   transition: 0.5s;
@@ -675,9 +675,12 @@ nav li a {
 
 /*  project hover */
 
-.extra-project {
+.extra-project.weather-app {
   /* margin: 0 auto; */
+  background: url("../images/weather_app.png");
+  background-size: cover;
   position: relative;
+
 }
 
 
@@ -703,7 +706,7 @@ nav li a {
 
 
 
-.extra-project:hover img {
+.extra-project:hover {
   opacity: 0.8;
 }
 

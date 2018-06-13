@@ -204,8 +204,8 @@ nav {
 }
 
 .project-showcase {
-  /* background: url("../images/nova/nova.png");
-  background-size: cover; */
+  background: url("../images/nova/nova.png");
+  background-size: cover;
   display: inline-block;
   position: relative;
   width: 100%;
