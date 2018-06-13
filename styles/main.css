@@ -204,12 +204,21 @@ nav {
 }
 
 .project-showcase {
-  background: url("../images/nova/nova.png");
   background-size: cover;
   display: inline-block;
   position: relative;
   width: 100%;
   overflow: hidden;
+}
+.project-showcase.nova {
+  background-image: url("../images/nova/nova.png");
+  background-position: 50%;
+}
+.project-showcase.weather-app {
+  background-image: url("../images/weather_app.png");
+}
+.project-showcase.trading-app {
+  background-image: url("../images/trading.png");
 }
 
 .showcase img {
