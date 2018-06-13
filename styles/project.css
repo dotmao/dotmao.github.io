@@ -466,16 +466,21 @@ nav li a {
   max-width: 100%;
 }
 
+.sketch-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .sketch-text {
     color: white;
     letter-spacing: 0.1rem;
     font-size: 1.8rem;
     line-height: 5rem;
     position: absolute;
+    max-width: 80%;
     text-align: center;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
 
 }
 
@@ -682,13 +687,13 @@ nav li a {
   font-weight: 600;
   letter-spacing: 0.2rem;
   position: absolute;
-  top: 42%;
-  left: 50%;
-  transform: translate(-50%, 50%);
 }
 
 .overlay {
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 0;
     position: absolute;
     width: 100%;
@@ -696,15 +701,6 @@ nav li a {
     opacity: 0;
 }
 
-
-.overlay2 {
-    box-sizing: border-box;
-    top: 0;
-    position: absolute;
-    width: 100%;
-    height: 40rem;
-    opacity: 0;
-}
 
 
 .extra-project:hover img {
@@ -712,13 +708,17 @@ nav li a {
 }
 
 .extra-project:hover .overlay {
-  background: #118888;
-  opacity: 1;
+  opacity: 0.8;
 }
 
-.extra-project:hover .overlay2 {
+.extra-project:hover .overlay {
+  opacity: 0.8;
+}
+.overlay.green-bg {
+  background: #118888;
+}
+.overlay.peach-bg {
   background: #F2797F;
-  opacity: 1;
 }
 
 /*-------------footer-------------------- */
@@ -911,11 +911,6 @@ footer > ul {
 
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-  /* .nav li {
-    display: none;
-  } */
-
-
   .intro-text p {
     padding-top: 3rem;
   }
@@ -1030,15 +1025,8 @@ footer > ul {
     height: 60rem;
   }
   .sketch-text {
-    color: white;
-    letter-spacing: 0.1rem;
-    font-size: 1.8rem;
     line-height: 4rem;
-    position: absolute;
-    text-align: center;
-    top: 20%;
-    left: 2%;
-    transform: none;
+    max-width: 90%;
   }
 
 
@@ -1126,9 +1114,6 @@ footer > ul {
   }
 
   .project-name {
-    top: 25%;
-    left: 50%;
-    text-align: center;
     line-height: 3rem;
   }
 
@@ -1199,6 +1184,16 @@ footer > ul {
   .challenges-and-solutions-container {
     padding: 8rem 5rem;
   }
+  .research {
+    display: block;
+  }
+  .research-sum {
+    max-width: 100%;
+    padding-bottom: 5rem;
+  }
+  .objectives {
+    max-width: 100%;
+  }
   .case-study-process {
     margin-left: 5rem;
     margin-right: 5rem;
@@ -1209,6 +1204,7 @@ footer > ul {
     max-width: 15rem;
     padding-right: 5rem;
   }
+
   .persona {
     display: block;
     padding-left: 10%;
@@ -1230,10 +1226,8 @@ footer > ul {
     padding-left: 0;
   }
   .sketch-text {
-    top: 30%;
-    left: 5%;
-    right: 5%;
-    transform: none;
+    line-height: 4rem;
+    max-width: 90%;
   }
   .branding-content {
     display: block;
@@ -1283,9 +1277,6 @@ footer > ul {
   }
 
   .project-name {
-    top: 45%;
-    left: 50%;
-    text-align: center;
     line-height: 3rem;
   }
   .back-to-top {
@@ -1320,29 +1311,3 @@ footer > ul {
     max-width: 40%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 1201px) {
-   header {
-     display: flex;
-   }
- }

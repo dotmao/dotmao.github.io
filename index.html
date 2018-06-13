@@ -22,7 +22,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   </head>
-  <body>
+  <body onresize="myFunction()">
       <!-- nav bar -->
       <section class="nav">
         <div class="nav-container">
@@ -67,7 +67,7 @@
         <div class="buttons">
           <div class="hero-button" data-aos="fade-right">
             <!-- <a href="" class="button">PROJECT</a> -->
-            <a href="" class="button">RESUME</a>
+            <a href="assets/Resume.pdf" class="button">RESUME</a>
           </div>
           <div class="social" data-aos="fade-left">
             <ul class="footer-icons" id="social-icons">
@@ -98,38 +98,42 @@
           </h2>
           <div class="projects-wrapper">
             <div class="project-showcase">
-              <a href="project.html">
+                  <div class="showcase">
+                    <img src="images/nova/nova.png">
+                  </div>
+                  <div class="hover-overlay green-bg">
+                    <a href="project.html">
+                      <div class="hover-text" >
+                        <h3>NOVA</h3>
+                        <p>Cloud Service Concept</p>
+                      </div>
+                    </a>
+                  </div>
+            </div>
+            <div class="project-showcase">
+                  <div class="showcase">
+                    <img src="images/weather_app.png">
+                  </div>
+                  <div class="hover-overlay peach-bg">
+                    <a href="">
+                      <div class="hover-text">
+                        <h3>Weather App</h3>
+                        <p>Coming Soon</p>
+                      </div>
+                    </a>
+                  </div>
+            </div>
+            <div class="project-showcase">
               <div class="showcase">
-                <img src="images/nova/nova.png">
+                <img src="images/trading.png">
               </div>
-              <div class="hover-overlay">
-                <div class="hover-text" >
-                  <h3>NOVA</h3>
-                  <p>Cloud Service Concept</p>
-                </div>
+              <div class="hover-overlay purple-bg">
+                <a href="">
+                  <div class="hover-text">
+                    <h3>Trading App</h3>
+                    <p>Coming Soon</p>
+                  </div>
                 </a>
-              </div>
-            </div>
-            <div class="project-showcase">
-              <div class="showcase">
-                <a><img src="images/weather_app.png"></a>
-              </div>
-              <div id="hover-overlay2">
-                <div class="hover-text-weather-app">
-                  <h3>Weather App</h3>
-                  <p>Coming Soon</p>
-                </div>
-              </div>
-            </div>
-            <div class="project-showcase">
-              <div class="showcase">
-                <a><img src="images/trading.png"></a>
-              </div>
-              <div id="hover-overlay3">
-                <div class="hover-trading-app">
-                  <h3>Trading App</h3>
-                  <p>Coming Soon</p>
-                </div>
               </div>
             </div>
         </div>

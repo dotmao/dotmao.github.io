@@ -144,9 +144,9 @@ nav {
 
 .hero-content h3 {
   color: #ffffff;
-  letter-spacing: 0.2rem;
-  margin-top: 2rem;
-  padding-top: 3rem;
+  letter-spacing: 0.3rem;
+  margin-top: 3rem;
+  text-transform: uppercase;
 }
 
 .hero-content p {
@@ -204,20 +204,13 @@ nav {
 }
 
 .project-showcase {
+  /* background: url("../images/nova/nova.png");
+  background-size: cover; */
   display: inline-block;
   position: relative;
-  width: auto;
+  width: 100%;
   overflow: hidden;
 }
-
-.showcase {
-  box-sizing: border-box;
-  position: relative;
-  width: 100%;
-  height: 35rem;
-}
-
-
 
 .showcase img {
   max-width: 100%;
@@ -231,41 +224,41 @@ nav {
 }
 
 .project-showcase:hover .hover-overlay {
-  background: #118888;
   opacity: 0.8;
+}
+
+.hover-overlay.green-bg {
+  background: #118888;
+}
+
+.hover-overlay.peach-bg {
+  background: #F2797F;
+}
+
+.hover-overlay.purple-bg {
+  background: #5a3f7f;
 }
 
 .hover-overlay {
     box-sizing: border-box;
+    display: flex;
     top: 0;
     position: absolute;
     width: 100%;
-    height: 35rem;
+    height: 100%;
     opacity: 0;
 }
 
-/* second project hover */
-
-.project-showcase:hover #hover-overlay2 {
-  background: #F2797F;
-  opacity: 0.8;
-}
-
-#hover-overlay2 {
-    box-sizing: border-box;
-    top: 0;
-    position: absolute;
-    width: 100%;
-    height: 35rem;
-    opacity: 0;
+.hover-overlay a {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 .hover-text {
   color: white;
   font-size: 1.8rem;
-  position: absolute;
-  top: 45%;
-  left: 20%;
+  margin:auto;
   -webkit-transition: all .3s ease;
   text-align: center;
   opacity: 0;
@@ -275,62 +268,8 @@ nav {
   opacity: 1;
 }
 
-.hover-text-weather-app {
-  color: white;
-  font-size: 1.8rem;
-  position: absolute;
-  top: 45%;
-  left: 40%;
-  -webkit-transition: all .3s ease;
-  text-align: center;
-  opacity: 0;
-}
-
-
-.project-showcase:hover .hover-text-weather-app {
-  opacity: 1
-}
-
-
 .hover-text p {
   padding-top: 1rem;
-}
-.hover-text-weather-app p {
-  padding-top: 1rem;
-}
-.hover-trading-app p {
-  padding-top: 1rem;
-}
-
-
-.hover-trading-app {
-  color: white;
-  font-size: 1.8rem;
-  position: absolute;
-  top: 45%;
-  left: 40%;
-  -webkit-transition: all .3s ease;
-  text-align: center;
-  opacity: 0;
-}
-
-#hover-overlay3 {
-    box-sizing: border-box;
-    top: 0;
-    position: absolute;
-    width: 100%;
-    height: 35rem;
-    opacity: 0;
-}
-
-.project-showcase:hover #hover-overlay3 {
-  background: #5a3f7f;
-  opacity: 0.8;
-}
-
-
-.project-showcase:hover .hover-trading-app {
-  opacity: 1
 }
 
 
@@ -344,7 +283,7 @@ nav {
 }
 
 .process-content {
-  padding: 10rem 14rem;
+  padding: 10%;
 }
 
 .process-container p {
@@ -636,14 +575,6 @@ footer > ul {
     width: 100%;
   }
 
-  .hover-text {
-    left: 18%;
-    }
-
-  .hover-text-weather-app {
-      left: 35%;
-    }
-
   .process-container {
       margin-top: 0;
       height: 52rem;
@@ -748,14 +679,6 @@ footer > ul {
   .showcase img {
     width: 100%
   }
-  .hover-text {
-    left: 30%;
-  }
-
-  .hover-text-weather-app {
-    left: 40%;
-    }
-
   .process-container {
       margin-top: 8rem;
       height: 58rem;
@@ -783,4 +706,8 @@ footer > ul {
 
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1200px)
+@media only screen and (min-width: 992px) and (max-width: 1100px) {
+  .process-content {
+    padding: 8%;
+  }
+}
