@@ -51,7 +51,6 @@ p {
 .nav-logo {
   float: left;
   position: relative;
-  height: 20px;
 }
 
 input {
@@ -85,10 +84,6 @@ nav li a {
 
 .main-nav li {
   position: relative;
-}
-
-.nav-logo {
-    margin-top: 2rem;
 }
 
 nav {
@@ -191,13 +186,12 @@ nav {
 .projects-container {
   margin-top: 14rem;
 }
-
-
 .projects-container h2 {
  font-weight: 500;
- letter-spacing: 0.2rem;
+ letter-spacing: 0.3rem;
  margin-bottom: 4rem;
  text-align: center;
+ text-transform: uppercase;
 }
 .projects-wrapper {
   display: flex;
@@ -205,17 +199,19 @@ nav {
 
 .project-showcase {
   background-size: cover;
+  background-position: 50%;
   display: inline-block;
+  height: 35rem;
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 .project-showcase.nova {
   background-image: url("../images/nova/nova.png");
-  background-position: 50%;
 }
 .project-showcase.weather-app {
   background-image: url("../images/weather_app.png");
+
 }
 .project-showcase.trading-app {
   background-image: url("../images/trading.png");
