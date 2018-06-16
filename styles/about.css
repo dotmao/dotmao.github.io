@@ -38,22 +38,26 @@ span {
   font-size: 1.8rem;
 }
 
-/*-----------------nav----------------*/
 .nav-logo a i {
   font-size: 2rem;
 }
 
-input {
-  display: none;
-}
-
 .nav-container {
-  overflow: hidden;
-  width:100%;
-  position: fixed;
-  padding:
-  z-index: 2
+    overflow: hidden;
+    width:100%;
+    position: absolute;
+    padding: 3rem 5rem;
+    z-index: 2
 }
+  #menuToggle input {
+    display: none;
+  }
+
+  #arrow-back {
+    display: none;
+  }
+
+
 
 .nav-logo {
   float: left;
@@ -64,7 +68,7 @@ input {
 
 .menu {
   float: right;
-  padding: 40px 50px 30px 0px;
+  padding-top: 3rem;
 }
 
 /*--------- getting rid of the link underline   --------*/
@@ -94,33 +98,13 @@ nav li a {
   display: none!important;
 } */
 
-.nav-container {
-    overflow: hidden;
-    width:100%;
-    position: absolute;
-  }
 
-  .nav-logo {
-    margin-top: 2rem;
-    margin-left: 6rem;
-  }
-
-  #arrow-back {
-    display: none;
-  }
-  .menu {
-    float: right;
-    padding-right: 6rem;
-  }
 
   nav li {
     margin: 0 1rem;
     padding-right: 2rem;
   }
 
-input {
-  display: none;
-}
 
 .main-nav a:after {
   opacity:0;
@@ -133,13 +117,11 @@ input {
   background-color: #7AABD3;
   transition: all .5s;
 }
-
 .main-nav li:hover a:after {
   width: 40px;
   opacity: 1;
   transition: all .5s;
 }
-
 
 .banner-image {
   width: 100%;

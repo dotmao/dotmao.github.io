@@ -51,6 +51,7 @@ p {
 .nav-logo {
   float: left;
   position: relative;
+  height: 20px;
 }
 
 input {
@@ -84,6 +85,10 @@ nav li a {
 
 .main-nav li {
   position: relative;
+}
+
+.nav-logo {
+    margin-top: 2rem;
 }
 
 nav {
@@ -186,9 +191,11 @@ nav {
 .projects-container {
   margin-top: 14rem;
 }
+
+
 .projects-container h2 {
  font-weight: 500;
- letter-spacing: 0.3rem;
+ letter-spacing: 0.2rem;
  margin-bottom: 4rem;
  text-align: center;
  text-transform: uppercase;
