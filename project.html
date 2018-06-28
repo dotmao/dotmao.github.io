@@ -20,6 +20,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- <link href="/static/fontawesome/fontawesome-all.css" rel="stylesheet"> -->
 
+
+
   </head>
   <body>
     <!-- nav bar -->
@@ -225,7 +227,19 @@
                 </div>
               </div>
               <div class="survey-graphs">
-                <img src="svgs/survey.svg">
+                <!-- <img src="svgs/survey.svg"> -->
+                <div>
+                  <canvas id="chart1"></canvas>
+                </div>
+                <div>
+                  <canvas id="chart2"></canvas>
+                </div>
+                <div>
+                  <canvas id="chart3"></canvas>
+                </div>
+                <div>
+                  <canvas id="chart4"></canvas>
+                </div>
               </div>
               <p id="research-conclusion">
                 It was very obvious that cloud storage service needs to improve security features at the same time provides more a user-friendly interface for
@@ -482,6 +496,10 @@
 
     gtag('config', 'UA-120665923-1');
   </script>
+
+  <!--chart.js  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="chart-data.js"></script>
 
   </body>
 </html>

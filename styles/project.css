@@ -360,13 +360,14 @@ nav li a {
 }
 
 .survey-graphs {
+  display: grid;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
-.survey-graphs img {
+/* .survey-graphs img {
   max-width: 95%;
-}
+} */
 
 
 
@@ -379,7 +380,7 @@ nav li a {
 .user-research p {
   letter-spacing: 0.1rem;
   line-height: 3rem;
-  max-width: 90%;
+  /* max-width: 90%; */
 }
 
 #research-conclusion {
