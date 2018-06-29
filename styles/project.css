@@ -28,6 +28,7 @@ h1, h2, h3 {
 }
 
 p {
+  color: #333333;
   font-family: 'Raleway', sans-serif;
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
@@ -39,6 +40,10 @@ h2 {
   font-size: 3.6rem;
   font-weight: 600;
   letter-spacing: 2px;
+}
+h3 {
+  font-size: 2.4rem;
+  font-weight: 300;
 }
 
 h5 {
@@ -192,7 +197,6 @@ nav li a {
 
 .roles h3 {
   letter-spacing: 0.1rem;
-  font-size: 2.4rem;
   font-weight: 600;
   text-align: left;
 }
@@ -215,7 +219,6 @@ nav li a {
 .tools h3 {
   letter-spacing: 0.1rem;
   font-weight: 600;
-  font-size: 2.4rem;
   text-align: left;
 }
 
@@ -361,8 +364,21 @@ nav li a {
 
 .survey-graphs {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12%;
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.survey-graphs h3 {
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: 2rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+.chart-wrapper {
+  width: 80%;
 }
 
 /* .survey-graphs img {
