@@ -69,7 +69,7 @@ var chart3 = new Chart(ctx3, {
 
   // The data for our dataset
   data: {
-      labels: ["Storage space", "Share content", "Backup files", "Collaboration", "Security and Privacy", "Save from Web"],
+      labels: ["Storage space", "Share content", "Backup files", "Collaboration", "Security", "Save from Web"],
       datasets: [{
           label: "My First dataset",
           backgroundColor: '#add8d9',
@@ -80,8 +80,17 @@ var chart3 = new Chart(ctx3, {
 
   // Configuration options go here
   options: {
-
-  }
+   legend: {
+       display: false
+   },
+   tooltips: {
+       callbacks: {
+          label: function(tooltipItem) {
+                 return tooltipItem.yLabel;
+          }
+       }
+   }
+}
 });
 
 //*******************chart4*****************
@@ -102,5 +111,16 @@ var chart4 = new Chart(ctx4, {
   },
 
   // Configuration options go here
-  options: {}
+    options: {
+     legend: {
+         display: false
+     },
+     tooltips: {
+         callbacks: {
+            label: function(tooltipItem) {
+                   return tooltipItem.yLabel;
+            }
+         }
+     }
+  }
 });

@@ -523,8 +523,10 @@ nav li a {
 }
 
 .name-content {
+  color: #333333;
   font-size: 1.6rem;
-  line-height: 3rem;
+  line-height: 4rem;
+
 }
 
 .branding-content img {
@@ -1013,7 +1015,23 @@ footer > ul {
     padding-top: 5rem;
   }
 
+  .survey-graphs {
+    display: block;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+
+
+  .chart-wrapper {
+    padding-top: 5rem;
+    width: 100%;
+  }
+
   .company-logos img {
+    display: block;
+    margin: 0 auto;
+    padding-right: 0;
     padding-bottom: 5rem;
   }
 
@@ -1217,6 +1235,9 @@ footer > ul {
     margin-right: 5rem;
     margin-top: 10rem;
   }
+  .company-logos {
+      display: flex;
+  }
   .company-logos img {
     margin-left: 2rem;
     max-width: 15rem;
@@ -1255,6 +1276,7 @@ footer > ul {
   }
   .name-content {
     max-width: 100%;
+    line-height: 3rem;
     padding-top: 5rem;
   }
   #style-guide img {
