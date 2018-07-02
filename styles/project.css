@@ -377,9 +377,17 @@ nav li a {
   padding-bottom: 5rem;
   text-align: center;
 }
+
 .chart-wrapper {
   width: 80%;
+  padding-bottom: 5rem;
 }
+
+.chart-wrapper h3 {
+  padding-top: 5rem;
+
+}
+
 
 /* .survey-graphs img {
   max-width: 95%;
@@ -1154,6 +1162,7 @@ footer > ul {
   }
 
   footer {
+    position: relative;
     height: auto;
     padding-bottom: 3rem;
   }
