@@ -394,6 +394,17 @@ footer > ul {
 /*------------mobile------------------- */
 @media screen and (max-width: 599px) {
 
+  h1 {
+    font-size: 3.2rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
   .nav-container {
     padding: 0 0;
     overflow: visible;
@@ -437,7 +448,7 @@ footer > ul {
   #menuToggle input {
   display: block;
   width: 40px;
-  height: 40px;
+  height: 50px;
   position: absolute;
   top: -7px;
   left: -5px;
@@ -456,7 +467,7 @@ footer > ul {
   margin-bottom: 4px;
   position: relative;
 
-  background: #333333;
+  background: #ffffff;
   border-radius: 3px;
 
   z-index: 1;
@@ -488,7 +499,7 @@ footer > ul {
   #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    background: #ffffff;
   }
 
   #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -536,11 +547,13 @@ footer > ul {
   }
 
   .hero-content h1 {
-    padding-top: 12rem;
+    padding-top: 14rem;
   }
   .hero-content p {
     max-width: 100%;
-    padding-top: 4rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 5rem;
   }
   .buttons {
     display: block;
