@@ -121,14 +121,18 @@ nav {
 
 /* hero section  */
 .hero-container {
-  background-image: url("../images/herobanner.png");
+  /* background-image: url("../images/herobanner.png"); */
+  background: linear-gradient(to right, #C33764, rgba(29,	38,	113, 0.8), #007991);
   background-size: cover;
   background-repeat: no-repeat;
   height: 70rem;
-  padding-left: 14rem;
+  /* padding-left: 14rem; */
 }
 
 
+.hero-content {
+  text-align: center;
+}
 
 .hero-content h1 {
   color: #ffffff;
@@ -155,7 +159,8 @@ nav {
   font-weight: 500;
   line-height: 2.4rem;
   letter-spacing: 0.2rem;
-  max-width: 50%;
+  padding-left: 18%;
+  padding-right: 18%;
   padding-top: 8rem;
 }
 
@@ -163,6 +168,7 @@ nav {
 .buttons {
   display: flex;
   margin-top: 8%;
+  justify-content: center;
 }
 
 .button {
