@@ -61,6 +61,12 @@ br {
   line-height: 2rem;
 }
 
+.nav {
+  background-image: url(../images/nova/nova.png);
+  background-size: cover;
+  height: 70rem;
+}
+
 .nav-logo a i {
   font-size: 2rem;
 }
@@ -371,7 +377,7 @@ nav li a {
 }
 
 .survey-graphs h3 {
-  font-family: Roboto;
+  font-family: Raleway;
   font-weight: 200;
   font-size: 2rem;
   padding-bottom: 5rem;
@@ -387,11 +393,6 @@ nav li a {
   padding-top: 5rem;
 
 }
-
-
-/* .survey-graphs img {
-  max-width: 95%;
-} */
 
 
 
@@ -437,6 +438,11 @@ nav li a {
 
 .user-persona p {
   padding-bottom: 5rem;
+}
+.user-persona a:link {
+      font-weight: 600;
+      text-decoration: none;
+      color: #7AABD3;
 }
 
 .persona {
@@ -509,6 +515,11 @@ nav li a {
     height: 100%;
     display: none;
     color: #FFF;
+}
+.ia-user-stories a:link {
+    font-weight: 600;
+    text-decoration: none;
+    color: #7AABD3;
 }
 
 #lo-fi-text {
@@ -846,7 +857,7 @@ footer > ul {
   display: block;
   position: absolute;
   top: 0;
-  right: 1.8rem;
+  right: 3rem;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
@@ -855,7 +866,7 @@ footer > ul {
   #menuToggle input {
   display: block;
   width: 40px;
-  height: 40px;
+  height: 50px;
   position: absolute;
   top: -7px;
   left: -5px;
@@ -936,6 +947,10 @@ footer > ul {
 
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
+
+  .main-nav {
+    overflow: hidden;
+  }
   .intro-text p {
     padding-top: 3rem;
   }
@@ -1056,8 +1071,14 @@ footer > ul {
   }
 
   .ia-user-stories img {
-    padding-left: 0;
+    display: none;
   }
+  .ia-user-stories p {
+    padding-bottom: 0;
+  }
+
+
+
   .lo-fi-mockup-container {
     padding-left: 0;
   }

@@ -413,8 +413,15 @@ footer > ul {
   #arrow-back {
     display: none;
   }
-  .nav-logo {
+  #logo img {
+    width: 30px;
+  }
+  /* .nav-logo {
     padding: 2rem;
+  } */
+  .nav-logo {
+    margin-top: 3rem;
+    margin-left: 3rem;
   }
 /*--------------------------mobile hamburger menu------------------*/
   .menu a {
@@ -439,7 +446,7 @@ footer > ul {
   display: block;
   position: absolute;
   top: 0;
-  right: 1.8rem;
+  right: 3rem;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
@@ -529,6 +536,10 @@ footer > ul {
 
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
+  .main-nav {
+    overflow: hidden;
+  }
+
   .menu-icon {
     display: inline-block;
     padding-right: 1rem;
@@ -619,8 +630,8 @@ footer > ul {
   .process-container p {
       display: block;
       font-size: 1.8rem;
-      padding-left: 3rem;
-      padding-right: 3rem;
+      padding-left: 0;
+      padding-right: 0;
       padding-top: 0;
       text-align: center;
       max-width: 100%;

@@ -293,9 +293,9 @@ footer > ul {
     display: none;
   }
   .nav-logo {
-    padding: 2rem;
-    margin-top: 0;
-    margin-left: 0;
+    /* padding: 2rem; */
+    margin-top: 3rem;
+    margin-left: 3rem;
   }
 
 /*--------------------------mobile hamburger menu------------------*/
@@ -317,14 +317,15 @@ footer > ul {
     color: #ffffff;
   }
   .menu {
-    padding: 0;
+    float: right;
+    padding-left: 3rem;
   }
 
   #menuToggle {
   display: block;
   position: absolute;
-  top: 1.8rem;
-  right: 1.8rem;
+  top: 0;
+  right: 3rem;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
@@ -333,7 +334,7 @@ footer > ul {
   #menuToggle input {
   display: block;
   width: 40px;
-  height: 40px;
+  height: 50px;
   position: absolute;
   top: -7px;
   left: -5px;
@@ -414,6 +415,9 @@ footer > ul {
 
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
+  .main-nav {
+    overflow: hidden;
+  }
 
   .self-intro-container {
     padding-top: 10rem;
@@ -428,10 +432,6 @@ footer > ul {
     padding-left: 2rem;
     padding-right: 2rem;
     width: 100%;
-  }
-  .introduction {
-    margin-left: 2rem;
-    margin-right: 2rem;
   }
   .introduction h1 {
     padding-top: 5rem;
